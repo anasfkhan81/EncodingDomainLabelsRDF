@@ -1,5 +1,5 @@
 # Guidelines for Encoding Domain Labels in RDF Using in OntoLex
-## Fahad Khan and Ana Salgado
+### Fahad Khan and Ana Salgado
 
 ## Domain Labels - An Introduction
 
