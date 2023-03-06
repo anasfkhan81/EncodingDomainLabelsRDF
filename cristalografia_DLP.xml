@@ -1,0 +1,41 @@
+<?xml-model href="http://dacl.zbr.pt/exist/rest/db/schemas/academia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+    
+<entry xmlns="http://www.tei-c.org/ns/1.0" type="monolexicalUnit" xml:lang="pt"
+    xml:id="DLP.cristalografia">
+    <form type="lemma">
+        <orth>cristalografia</orth>
+        <pron>kriʃtɐluɡrɐˈfiɐ</pron>
+    </form>
+    <gramGrp>
+        <gram type="pos" norm="NOUN">n.</gram>
+        <gram type="gen">f.</gram>
+    </gramGrp>
+    <sense xml:id="DLP.cristalografia_1">
+        <usg type="domain" corresp="#domain.earth_sciences.geology.mineralogy"/>
+        <def>ciência que estuda os cristais, considerando aspetos tais como o seu crescimento, a
+            estrutura interna e as propriedades físicas decorrentes da regularidade dessa estrutura,
+            em particular, as formas que apresentam, cuja simetria utiliza como método de
+            classificação e de descrição</def>
+    </sense>
+    <etym>
+        <etym type="inheritance">
+            <seg type="desc">Do grego</seg>
+            <cit type="etymon" xml:lang="grc">
+                <form><orth>κρύσταλλος</orth></form>
+                <pc>,</pc>
+                <pc>'</pc>
+                <gloss>cristal</gloss>
+                <pc>'</pc>
+            </cit>
+        </etym>
+        <metamark>+</metamark>
+        <etym type="grammaticalization">
+            <seg type="desc">sufixo</seg>
+            <cit type="etymon" xml:lang="pt">
+                <form>
+                    <orth extent="suf">-grafia</orth>
+                </form>
+            </cit>
+        </etym>
+    </etym>
+</entry>
