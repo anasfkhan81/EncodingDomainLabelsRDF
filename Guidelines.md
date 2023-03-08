@@ -16,9 +16,10 @@ Assuming that the unmarked lexicon belongs to the general lexicon, as we shall s
 
 
 ### Examples
-
+We will take examples from the Portuguese Academy Dictionary
 ## Relevant Semantic Web Vocabularies
-## Ontolex-Lemon and Lexicog
+## Ontolex-Lemon, Lexinfo and Lexicog
+We will assume a basic knowledge of the OntoLex-Lemon vocabulary, its extension dealing with lexicographic resources Lexicog, and the ontology Lexinfo which allows for the addition of . It is important to be able to work with lexicog which allows for the encoding of the editorial and typographical views mentioned in the TEI Guidelines, as opposed to the lexical view (covered by the original OntoLex-Lemon vocabulary)
 ## SKOS and SKOS-XL
 
 
