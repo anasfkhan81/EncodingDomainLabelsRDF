@@ -1,0 +1,27 @@
+<?xml-model href="http://dacl.zbr.pt/exist/rest/db/schemas/academia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<!--etc.-->
+<sense n="12" xml:id="DLP-defesa_1">
+    <usg type="domain">Desp.</usg>
+    <def>acção de contrariar o ataque, a investida do adversário; acto ou efeito de defender</def>
+    <xr type="antonymy">
+        <ref type="entry">ataque</ref>
+    </xr>
+    <entry xml:id="jogar_a_defesa" xml:lang="pt" type="relatedEntry">
+        <form type="collocation">
+            <orth>jogar à defesa</orth>
+        </form>
+        <sense xml:id="jogar_a_defesa">
+            <usg type="domain">Fut.</usg>
+            <def>procurar defender a sua baliza, sem atacar, sem procurar marcar golos</def>
+        </sense>
+    </entry>
+    <cit type="example">
+        <quote>Errado é jogar à defesa.</quote>
+        <bibl>
+            <title>DN</title>
+            <date>26.10.1988</date>
+        </bibl>
+    </cit>
+</sense>
+<!--etc.-->

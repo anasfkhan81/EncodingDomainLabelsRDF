@@ -1,0 +1,130 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://lari-datasets.ilc.cnr.it/nenu_sample#" xmlns:void="http://rdfs.org/ns/void#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:ns="http://creativecommons.org/ns#" xmlns:lime="http://www.w3.org/ns/lemon/lime" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:lexinfo="http://www.lexinfo.net/ontology/3.0/lexinfo#" xmlns:lexicog="http://www.w3.org/ns/lemon/lexicog#" xmlns:dct="http://purl.org/dc/terms/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:terms="http://purl.org/dc/terms/" xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:lime1="http://www.w3.org/ns/lemon/lime#" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <ontolex:LexicalEntry rdf:ID="DLP.era">
+    <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era</ontolex:writtenRep><ontolex:phoneticRep xml:lang="pt">&#712;&#603;r&#592;</ontolex:phoneticRep></rdf:Description></ontolex:canonicalForm>
+    <lexinfo:gender rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#feminine"/>
+    <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">per&#237;odo de tempo que serve de base a um sistema cronol&#243;gico e principia com uma data
+            memor&#225;vel, a partir do qual se contam os anos, em sucess&#227;o cont&#237;nua</skos:definition><ontolex:LexicalEntry rdf:ID="DLP-era_1_1">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era comum</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">o mesmo que <xr xmlns="http://www.tei-c.org/ns/1.0"><rdf:value xml:lang="pt">era crist&#227;</rdf:value></xr>
+                </skos:definition></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry><ontolex:LexicalEntry rdf:ID="DLP-era_1_2">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era crist&#227;</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">a que se conta a partir do nascimento de Jesus Cristo</skos:definition></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry><ontolex:LexicalEntry rdf:ID="DLP-era_1_4">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era de Cristo</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">o mesmo que <xr xmlns="http://www.tei-c.org/ns/1.0"><rdf:value xml:lang="pt">era crist&#227;</rdf:value></xr>
+                </skos:definition></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry><ontolex:LexicalEntry rdf:ID="DLP-era_1_6">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era hisp&#226;nica</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">a que inicia 38 anos antes da era crist&#227;, assinalando a conquista romana da
+                    Pen&#237;nsula Ib&#233;rica</skos:definition><rdfs:comment>Usada em Portugal at&#233; 1422.</rdfs:comment></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry><ontolex:LexicalEntry rdf:ID="DLP-era_1_8">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era mu&#231;ulmana</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">a que inicia o calend&#225;rio isl&#226;mico e que corresponde ao ano 622 da era crist&#227;,
+                    assinalando a data da fuga do profeta Maom&#233; de Meca para Medina (H&#233;gira)</skos:definition><rdfs:comment>Usada em Portugal at&#233; 1422.</rdfs:comment></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry></rdf:Description></ontolex:sense>
+    <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">in&#237;cio de uma nova ordem de coisas</skos:definition><lexicog:usageExample><rdf:Description>
+            <rdf:value xml:lang="pt">Entr&#225;mos numa nova era de maior justi&#231;a e liberdade.</rdf:value>
+        </rdf:Description></lexicog:usageExample><form xmlns="http://www.tei-c.org/ns/1.0" type="collocations"><form type="collocation"><ontolex:writtenRep xmlns="http://lari-datasets.ilc.cnr.it/nenu_sample#" xml:lang="pt"><ref xmlns="http://www.tei-c.org/ns/1.0" type="oRef"> </ref>era at&#243;mica; era da informa&#231;&#227;o; era digital; era do fogo; era dos
+                        computadores; era espacial</ontolex:writtenRep><gram type="mwe" value="co-ocorrente_privilegiado"/></form></form></rdf:Description></ontolex:sense>
+    <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">qualquer per&#237;odo cronol&#243;gico demarcado</skos:definition><lexinfo:synonym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">&#233;poca</rdf:value></rdf:Description></lexinfo:synonym><lexinfo:synonym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">tempo</rdf:value></rdf:Description></lexinfo:synonym><ontolex:LexicalEntry rdf:ID="DLP-era_3_1">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era dos afonsinhos</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">tempos antiquados, desatualizados</skos:definition><lexinfo:synonym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">tempo dos afonsinhos</rdf:value></rdf:Description></lexinfo:synonym><rdfs:comment>Por alus&#227;o ir&#243;nica aos tempos em que reinaram os primeiros Afonsos
+                    de Portugal.</rdfs:comment></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry></rdf:Description></ontolex:sense>
+    <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><lexinfo:hyponym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">unidade cronostratigr&#225;fica</rdf:value></rdf:Description></lexinfo:hyponym><skos:definition xml:lang="pt">intervalo de tempo geol&#243;gico<xr xmlns="http://www.tei-c.org/ns/1.0"><rdf:value xml:lang="pt">(unidade geocronol&#243;gica)</rdf:value></xr>durante o qual se formou um eratema(<xr xmlns="http://www.tei-c.org/ns/1.0"><rdf:value xml:lang="pt">unidade cronostratigr&#225;fica</rdf:value></xr>)</skos:definition><rdfs:comment>1) Na escala do tempo geol&#243;gico, a era &#233; hierarquicamente superior
+            ao per&#237;odo e inferior ao &#233;on. 2) A era integra v&#225;rios per&#237;odos.</rdfs:comment><ontolex:LexicalEntry rdf:ID="DLP-era_4_1">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era prim&#225;ria</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><lexinfo:temporalQualifier><rdf:Description><rdf:value>obsoleto</rdf:value></rdf:Description></lexinfo:temporalQualifier><skos:definition xml:lang="pt">designa&#231;&#227;o da era paleozoica</skos:definition><lexinfo:synonym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">prim&#225;rio</rdf:value></rdf:Description></lexinfo:synonym></rdf:Description></ontolex:sense>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><skos:definition xml:lang="pt">o mesmo que <xr xmlns="http://www.tei-c.org/ns/1.0"><rdf:value xml:lang="pt">paleozoico</rdf:value></xr></skos:definition></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry><ontolex:LexicalEntry rdf:ID="DLP-era_4_4">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era quatern&#225;ria</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><lexinfo:temporalQualifier><rdf:Description><rdf:value>obsoleto</rdf:value></rdf:Description></lexinfo:temporalQualifier><skos:definition xml:lang="pt">designa&#231;&#227;o da antiga era antropozoica</skos:definition><lexinfo:synonym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">antropozoico</rdf:value></rdf:Description></lexinfo:synonym><lexinfo:synonym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">quatern&#225;rio</rdf:value></rdf:Description></lexinfo:synonym></rdf:Description></ontolex:sense>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><skos:definition xml:lang="pt">o mesmo que <xr xmlns="http://www.tei-c.org/ns/1.0"><rdf:value xml:lang="pt">quatern&#225;rio</rdf:value></xr> (atualmente &#8216;sistema/per&#237;odo&#8217;)</skos:definition></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry><ontolex:LexicalEntry rdf:ID="DLP-era_4_7">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era secund&#225;ria</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><lexinfo:temporalQualifier><rdf:Description><rdf:value>obsoleto</rdf:value></rdf:Description></lexinfo:temporalQualifier><skos:definition xml:lang="pt">designa&#231;&#227;o da era mesozoica</skos:definition><lexinfo:synonym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">secund&#225;rio</rdf:value></rdf:Description></lexinfo:synonym></rdf:Description></ontolex:sense>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><skos:definition xml:lang="pt">o mesmo que <xr xmlns="http://www.tei-c.org/ns/1.0"><rdf:value xml:lang="pt">mesozoico</rdf:value></xr></skos:definition></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry><ontolex:LexicalEntry rdf:ID="DLP-era_4_10">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era terci&#225;ria</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><lexinfo:temporalQualifier><rdf:Description><rdf:value>obsoleto</rdf:value></rdf:Description></lexinfo:temporalQualifier><skos:definition xml:lang="pt">designa&#231;&#227;o da era cenozoica</skos:definition><lexinfo:synonym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">terci&#225;rio</rdf:value></rdf:Description></lexinfo:synonym></rdf:Description></ontolex:sense>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><skos:definition xml:lang="pt">o mesmo que <xr xmlns="http://www.tei-c.org/ns/1.0"><rdf:value xml:lang="pt">cenozoico</rdf:value></xr></skos:definition></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry></rdf:Description></ontolex:sense>
+    <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">numera&#231;&#227;o que indica um ano ou um certo n&#250;mero de anos</skos:definition><lexicog:usageExample><rdf:Description>
+            <rdf:value xml:lang="pt">a era de 74 (1974); a era dos anos 90 (1990)</rdf:value>
+        </rdf:Description></lexicog:usageExample></rdf:Description></ontolex:sense>
+    <ontolex:sense><rdf:Description><lexinfo:geographic><rdf:Description><rdf:value>Bras.</rdf:value></rdf:Description></lexinfo:geographic><skos:definition xml:lang="pt">idade; n&#250;mero de anos</skos:definition><lexicog:usageExample><rdf:Description>
+            <rdf:value xml:lang="pt">Estes mi&#250;dos s&#227;o da mesma era.</rdf:value>
+        </rdf:Description></lexicog:usageExample></rdf:Description></ontolex:sense>
+        <lexinfo:etymology><rdf:Description><rdf:value xml:lang="pt">Do latim aera</rdf:value></rdf:Description></lexinfo:etymology>
+</ontolex:LexicalEntry>
+  <ontolex:LexicalEntry rdf:ID="DLP-era_1_1">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era comum</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">o mesmo que <xr xmlns="http://www.tei-c.org/ns/1.0"><rdf:value xml:lang="pt">era crist&#227;</rdf:value></xr>
+                </skos:definition></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry>
+  <ontolex:LexicalEntry rdf:ID="DLP-era_1_2">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era crist&#227;</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">a que se conta a partir do nascimento de Jesus Cristo</skos:definition></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry>
+  <ontolex:LexicalEntry rdf:ID="DLP-era_1_4">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era de Cristo</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">o mesmo que <xr xmlns="http://www.tei-c.org/ns/1.0"><rdf:value xml:lang="pt">era crist&#227;</rdf:value></xr>
+                </skos:definition></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry>
+  <ontolex:LexicalEntry rdf:ID="DLP-era_1_6">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era hisp&#226;nica</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">a que inicia 38 anos antes da era crist&#227;, assinalando a conquista romana da
+                    Pen&#237;nsula Ib&#233;rica</skos:definition><rdfs:comment>Usada em Portugal at&#233; 1422.</rdfs:comment></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry>
+  <ontolex:LexicalEntry rdf:ID="DLP-era_1_8">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era mu&#231;ulmana</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">a que inicia o calend&#225;rio isl&#226;mico e que corresponde ao ano 622 da era crist&#227;,
+                    assinalando a data da fuga do profeta Maom&#233; de Meca para Medina (H&#233;gira)</skos:definition><rdfs:comment>Usada em Portugal at&#233; 1422.</rdfs:comment></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry>
+  <ontolex:LexicalEntry rdf:ID="DLP-era_3_1">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era dos afonsinhos</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><skos:definition xml:lang="pt">tempos antiquados, desatualizados</skos:definition><lexinfo:synonym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">tempo dos afonsinhos</rdf:value></rdf:Description></lexinfo:synonym><rdfs:comment>Por alus&#227;o ir&#243;nica aos tempos em que reinaram os primeiros Afonsos
+                    de Portugal.</rdfs:comment></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry>
+  <ontolex:LexicalEntry rdf:ID="DLP-era_4_1">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era prim&#225;ria</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><lexinfo:temporalQualifier><rdf:Description><rdf:value>obsoleto</rdf:value></rdf:Description></lexinfo:temporalQualifier><skos:definition xml:lang="pt">designa&#231;&#227;o da era paleozoica</skos:definition><lexinfo:synonym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">prim&#225;rio</rdf:value></rdf:Description></lexinfo:synonym></rdf:Description></ontolex:sense>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><skos:definition xml:lang="pt">o mesmo que <xr xmlns="http://www.tei-c.org/ns/1.0"><rdf:value xml:lang="pt">paleozoico</rdf:value></xr></skos:definition></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry>
+  <ontolex:LexicalEntry rdf:ID="DLP-era_4_4">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era quatern&#225;ria</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><lexinfo:temporalQualifier><rdf:Description><rdf:value>obsoleto</rdf:value></rdf:Description></lexinfo:temporalQualifier><skos:definition xml:lang="pt">designa&#231;&#227;o da antiga era antropozoica</skos:definition><lexinfo:synonym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">antropozoico</rdf:value></rdf:Description></lexinfo:synonym><lexinfo:synonym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">quatern&#225;rio</rdf:value></rdf:Description></lexinfo:synonym></rdf:Description></ontolex:sense>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><skos:definition xml:lang="pt">o mesmo que <xr xmlns="http://www.tei-c.org/ns/1.0"><rdf:value xml:lang="pt">quatern&#225;rio</rdf:value></xr> (atualmente &#8216;sistema/per&#237;odo&#8217;)</skos:definition></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry>
+  <ontolex:LexicalEntry rdf:ID="DLP-era_4_7">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era secund&#225;ria</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><lexinfo:temporalQualifier><rdf:Description><rdf:value>obsoleto</rdf:value></rdf:Description></lexinfo:temporalQualifier><skos:definition xml:lang="pt">designa&#231;&#227;o da era mesozoica</skos:definition><lexinfo:synonym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">secund&#225;rio</rdf:value></rdf:Description></lexinfo:synonym></rdf:Description></ontolex:sense>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><skos:definition xml:lang="pt">o mesmo que <xr xmlns="http://www.tei-c.org/ns/1.0"><rdf:value xml:lang="pt">mesozoico</rdf:value></xr></skos:definition></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry>
+  <ontolex:LexicalEntry rdf:ID="DLP-era_4_10">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">era terci&#225;ria</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <gram xmlns="http://www.tei-c.org/ns/1.0" type="mwe" value="polylexical_term"> </gram>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><lexinfo:temporalQualifier><rdf:Description><rdf:value>obsoleto</rdf:value></rdf:Description></lexinfo:temporalQualifier><skos:definition xml:lang="pt">designa&#231;&#227;o da era cenozoica</skos:definition><lexinfo:synonym><rdf:Description rdf:about=""><rdf:value xml:lang="pt">terci&#225;rio</rdf:value></rdf:Description></lexinfo:synonym></rdf:Description></ontolex:sense>
+            <ontolex:sense><rdf:Description><lexinfo:domain><rdf:Description><rdf:value/></rdf:Description></lexinfo:domain><skos:definition xml:lang="pt">o mesmo que <xr xmlns="http://www.tei-c.org/ns/1.0"><rdf:value xml:lang="pt">cenozoico</rdf:value></xr></skos:definition></rdf:Description></ontolex:sense>
+        </ontolex:LexicalEntry>
+</rdf:RDF>

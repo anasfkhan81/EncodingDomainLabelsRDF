@@ -1,0 +1,20 @@
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/paleozoico_1_etym_rdf.xml#DLP.paleozoico_1> a ontolex:LexicalEntry ;
+    lexinfo:etymology [ rdf:value "De paleo- + grego animal sufixo -ico"@pt ] ;
+    ontolex:canonicalForm [ ontolex:phoneticRep "paljɔˈzɔjku"@pt ;
+            ontolex:writtenRep "paleozoico"@pt ] ;
+    ontolex:otherForm [ lexinfo:gender lexinfo:feminine ;
+            ontolex:phoneticRep "paljɔˈzɔjkɐ"@pt ;
+            ontolex:writtenRep "paleozoica"@pt ],
+        [ lexinfo:gender lexinfo:masculine ;
+            ontolex:writtenRep "paleozoico"@pt ] ;
+    ontolex:sense [ lexinfo:domain [ rdf:value "Geologia" ] ;
+            lexinfo:synonym <file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/paleozoico_1_etym_rdf.xml> ;
+            skos:definition "relativo ou pertencente ao Paleozoico"@pt ] .
+
+<file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/paleozoico_1_etym_rdf.xml> rdf:value "primário"@pt .
+

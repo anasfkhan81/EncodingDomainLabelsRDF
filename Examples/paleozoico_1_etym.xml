@@ -1,0 +1,58 @@
+<?xml-model href="http://dacl.zbr.pt/exist/rest/db/schemas/academia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<entry xmlns="http://www.tei-c.org/ns/1.0" type="monolexicalUnit" xml:lang="pt" xml:id="DLP.paleozoico_1" n="1">
+    <form type="lemma">
+        <orth>paleozoico</orth>
+        <pron>paljɔˈzɔjku</pron>
+    </form>
+    <form type="inflected">
+        <orth>paleozoico</orth>
+        <gramGrp>
+            <gram type="gen">m.</gram>
+        </gramGrp>
+    </form>
+    <form type="inflected">
+        <orth>paleozoica</orth>
+        <gramGrp>
+            <gram type="gen">f.</gram>
+        </gramGrp>
+        <pron>paljɔˈzɔjkɐ</pron>
+    </form>
+    <gramGrp>
+        <gram type="pos" norm="ADJ">adj.</gram>
+    </gramGrp>
+    <sense xml:id="DLPC.paleozoico_1">
+        <usg type="domain">Geologia</usg>
+        <def>relativo ou pertencente ao Paleozoico</def>
+        <xr type="synonymy">
+            <ref type="sense">primário</ref>
+        </xr>
+    </sense>
+    <etym>
+        <etym type="grammaticalization">
+            <seg type="desc">De</seg>
+            <cit type="etymon">
+                <form>
+                    <orth extent="pref">paleo-</orth>
+                </form>
+            </cit>
+        </etym>
+        <metamark>+</metamark>
+        <etym type="inheritance">
+            <seg type="desc">grego</seg>
+            <cit type="etymon" xml:lang="grc">
+                <pc>'</pc>
+                <gloss>animal</gloss>
+                <pc>'</pc>
+            </cit>
+        </etym>
+        <etym type="grammaticalization">
+            <seg type="desc">sufixo</seg>
+            <cit type="etymon">
+                <form>
+                    <orth extent="pref">-ico</orth>
+                </form>
+            </cit>
+        </etym>
+    </etym>
+</entry>

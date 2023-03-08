@@ -1,0 +1,44 @@
+<?xml-model href="http://dacl.zbr.pt/exist/rest/db/schemas/academia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<!--This example shows the encoding of a polylexical term as a cross-reference-->
+<entry xmlns="http://www.tei-c.org/ns/1.0" type="monolexicalUnit" xml:lang="pt" xml:id="DLP.geocronologico">
+    <form type="lemma">
+        <orth>geocronológico</orth>
+        <pron>ʒɛɔkrunuˈlɔʒiku</pron>
+    </form>
+    <gramGrp>
+        <gram type="pos" norm="ADJ">adj.</gram>
+    </gramGrp>
+    <sense xml:id="DLP.geocronologico_1">
+        <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+        <!--SEE-->
+        <usg type="domain">Geologia</usg>
+        <def>relativo ou pertencente à geocronologia</def>
+    </sense>
+    <sense xml:id="DLP.geocronologico_2">
+        <entry xml:id="unidade_geocronologica" xml:lang="pt" type="relatedEntry">
+            <form type="lemma">
+                <orth>
+                    <ref type="entry"><seg>unidade</seg></ref>
+                    <seg>geocronológica</seg>
+                </orth>
+            </form>
+        </entry>  
+    </sense>
+    <etym type="grammaticalization">
+        <seg type="desc">De</seg>
+        <cit type="etymon" xml:lang="pt">
+            <form>
+                <orth extent="pref">geo-</orth>
+            </form>
+        </cit>
+    </etym>
+    <etym type="grammaticalization">
+        <metamark>+</metamark>
+        <cit type="etymon" xml:lang="pt">
+            <form>
+                <orth>cronológico</orth>
+            </form>
+        </cit>
+    </etym>
+</entry>

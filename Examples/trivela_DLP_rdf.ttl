@@ -1,0 +1,22 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix lexicog: <http://www.w3.org/ns/lemon/lexicog#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/trivela_DLP_rdf.xml#DLP.trivela> a ontolex:LexicalEntry ;
+    lexinfo:etymology [ rdf:value "De origem obscura"@pt ] ;
+    lexinfo:gender lexinfo:feminine ;
+    ontolex:canonicalForm [ ontolex:phoneticRep "triˈvɛlɐ"@pt ;
+            ontolex:writtenRep "trivela"@pt ] ;
+    ontolex:sense [ lexinfo:domain [ rdf:value "" ] ;
+            rdfs:comment """https://www.youtube.com/watch?v=3yCL8vpmX18&t=49s&ab_channel=Canal11>
+        """ ;
+            skos:definition """técnica de passe, remate ou cruzamento em que se chuta a bola com a parte exterior do
+            pé, com o objetivo de dar um efeito especial à bola"""@pt ;
+            lexicog:usageExample [ dct:source "Público 2007.11.27 " ;
+                    rdf:value """O Quaresma-bom, das fintas maravilhosas, dos remates fulgurantes, dos geniais
+                cruzamentos em trivela, do individualismo brilhante."""@pt ] ] .
+

@@ -1,0 +1,242 @@
+<?xml-model href="http://dacl.zbr.pt/exist/rest/db/schemas/academia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<entry xmlns="http://www.tei-c.org/ns/1.0" type="monolexicalUnit" xml:lang="pt" xml:id="DLP.era">
+    <form type="lemma">
+        <orth>era</orth>
+        <pron>ˈɛrɐ</pron>
+    </form>
+    <gramGrp>
+        <gram type="pos" norm="NOUN">n.</gram>
+        <gram type="gen">f.</gram>
+    </gramGrp>
+    <sense n="1" xml:id="DLP-era_1">
+        <def>período de tempo que serve de base a um sistema cronológico e principia com uma data
+            memorável, a partir do qual se contam os anos, em sucessão contínua</def>
+        <entry xml:lang="pt" xml:id="DLP-era_1_1" type="relatedEntry">
+            <form type="lemma"><orth>era comum</orth>
+            </form>
+            <gramGrp>
+                <gram type="mwe" value="polylexical_term"> </gram>
+            </gramGrp>
+            <sense xml:id="era">
+                <def>o mesmo que <xr>
+                        <ref type="entry">era cristã</ref>
+                    </xr>
+                </def>
+            </sense>
+        </entry>
+        <entry xml:lang="pt" xml:id="DLP-era_1_2" type="relatedEntry">
+            <form type="lemma"><orth>era cristã</orth>
+            </form>
+            <gramGrp>
+                <gram type="mwe" value="polylexical_term"> </gram>
+            </gramGrp>
+            <sense xml:id="DLP-era_1_3">
+                <def>a que se conta a partir do nascimento de Jesus Cristo</def>
+            </sense>
+        </entry>
+        <entry xml:lang="pt" xml:id="DLP-era_1_4" type="relatedEntry">
+            <form type="lemma"><orth>era de Cristo</orth>
+            </form>
+            <gramGrp>
+                <gram type="mwe" value="polylexical_term"> </gram>
+            </gramGrp>
+            <sense xml:id="DLP-era_1_5">
+                <def>o mesmo que <xr>
+                        <ref type="entry">era cristã</ref>
+                    </xr>
+                </def>
+            </sense>
+        </entry>
+        <entry xml:lang="pt" xml:id="DLP-era_1_6" type="relatedEntry">
+            <form type="lemma"><orth>era hispânica</orth>
+            </form>
+            <gramGrp>
+                <gram type="mwe" value="polylexical_term"> </gram>
+            </gramGrp>
+            <sense xml:id="DLP-era_1_7">
+                <def>a que inicia 38 anos antes da era cristã, assinalando a conquista romana da
+                    Península Ibérica</def>
+                <note type="enciclopedic">Usada em Portugal até 1422.</note>
+            </sense>
+        </entry>
+        <entry xml:lang="pt" xml:id="DLP-era_1_8" type="relatedEntry">
+            <form type="lemma"><orth>era muçulmana</orth>
+            </form>
+            <gramGrp>
+                <gram type="mwe" value="polylexical_term"> </gram>
+            </gramGrp>
+            <sense xml:id="DLP-era_1_9">
+                <def>a que inicia o calendário islâmico e que corresponde ao ano 622 da era cristã,
+                    assinalando a data da fuga do profeta Maomé de Meca para Medina (Hégira)</def>
+                <note type="enciclopedic">Usada em Portugal até 1422.</note>
+            </sense>
+        </entry>
+    </sense>
+    <sense n="2" xml:id="DLP-era_2">
+        <def>início de uma nova ordem de coisas</def>
+        <cit type="example">
+            <quote type="example">Entrámos numa nova era de maior justiça e liberdade.</quote>
+        </cit>
+        <form type="collocations">
+            <form type="collocation">
+                <orth>
+                    <ref type="oRef"> </ref>
+                    <seg>era atómica; era da informação; era digital; era do fogo; era dos
+                        computadores; era espacial</seg>
+                </orth>
+                <gramGrp>
+                    <gram type="mwe" value="co-ocorrente_privilegiado"/>
+                </gramGrp>
+            </form>
+        </form>
+    </sense>
+    <sense n="3" xml:id="DLP-era_3">
+        <def>qualquer período cronológico demarcado</def>
+        <xr type="synonymy">
+            <ref type="entry">época</ref>
+        </xr>
+        <xr type="synonymy">
+            <ref type="entry">tempo</ref>
+        </xr>
+        <entry xml:lang="pt" xml:id="DLP-era_3_1" type="relatedEntry">
+            <form type="lemma"><orth>era dos afonsinhos</orth>
+            </form>
+            <gramGrp>
+                <gram type="mwe" value="polylexical_term"> </gram>
+            </gramGrp>
+            <sense xml:id="DLP-era_3_2">
+                <def>tempos antiquados, desatualizados</def>
+                <xr type="synonymy">
+                    <ref type="entry">tempo dos afonsinhos</ref>
+                </xr>
+                <note type="use">Por alusão irónica aos tempos em que reinaram os primeiros Afonsos
+                    de Portugal.</note>
+            </sense>
+        </entry>
+    </sense>
+    <sense n="4" xml:id="DLP-era_4">
+        <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+        <xr type="hyponymy">
+            <ref type="entry">unidade cronostratigráfica</ref>
+        </xr>
+            <def>intervalo de tempo geológico<xr>
+                <ref type="entry">(unidade geocronológica)</ref>
+            </xr>durante o qual se formou um eratema(<xr>
+                <ref type="entry">unidade cronostratigráfica</ref>
+            </xr>)</def>
+        <note type="enciclopedic">1) Na escala do tempo geológico, a era é hierarquicamente superior
+            ao período e inferior ao éon. 2) A era integra vários períodos.</note>
+        <entry xml:lang="pt" xml:id="DLP-era_4_1" type="relatedEntry">
+            <form type="lemma"><orth>era primária</orth>
+            </form>
+            <gramGrp>
+                <gram type="mwe" value="polylexical_term"> </gram>
+            </gramGrp>
+            <sense n="1" xml:id="DLP-era_4_2">
+                <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+                <usg type="time">obsoleto</usg>
+                <def>designação da era paleozoica</def>
+                <xr type="synonymy">
+                    <ref type="entry">primário</ref>
+                </xr>
+            </sense>
+            <sense n="2" xml:id="DLP-era_4_3">
+                <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+                <def>o mesmo que <xr>
+                        <ref type="entry">paleozoico</ref>
+                    </xr></def>
+            </sense>
+        </entry>
+        <entry xml:lang="pt" xml:id="DLP-era_4_4" type="relatedEntry">
+            <form type="lemma"><orth>era quaternária</orth>
+            </form>
+            <gramGrp>
+                <gram type="mwe" value="polylexical_term"> </gram>
+            </gramGrp>
+            <sense n="1" xml:id="DLP-era_4_5">
+                <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+                <usg type="time">obsoleto</usg>
+                <def>designação da antiga era antropozoica</def>
+                <xr type="synonymy">
+                    <ref type="entry">antropozoico</ref>
+                </xr>
+                <xr type="synonymy">
+                    <ref type="entry">quaternário</ref>
+                </xr>
+            </sense>
+            <sense n="2" xml:id="DLP-era_4_6">
+                <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+                <def>o mesmo que <xr>
+                        <ref type="entry">quaternário</ref>
+                    </xr> (atualmente ‘sistema/período’)</def>
+            </sense>
+        </entry>
+        <entry xml:lang="pt" xml:id="DLP-era_4_7" type="relatedEntry">
+            <form type="lemma"><orth>era secundária</orth>
+            </form>
+            <gramGrp>
+                <gram type="mwe" value="polylexical_term"> </gram>
+            </gramGrp>
+            <sense n="1" xml:id="DLP-era_4_8">
+                <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+                <usg type="time">obsoleto</usg>
+                <def>designação da era mesozoica</def>
+                <xr type="synonymy">
+                    <ref type="entry">secundário</ref>
+                </xr>
+            </sense>
+            <sense n="2" xml:id="DLP-era_4_9">
+                <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+                <def>o mesmo que <xr>
+                        <ref type="entry">mesozoico</ref>
+                    </xr></def>
+            </sense>
+        </entry>
+        <entry xml:lang="pt" xml:id="DLP-era_4_10" type="relatedEntry">
+            <form type="lemma"><orth>era terciária</orth>
+            </form>
+            <gramGrp>
+                <gram type="mwe" value="polylexical_term"> </gram>
+            </gramGrp>
+            <sense n="1" xml:id="DLP-era_4_11">
+                <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+                <usg type="time">obsoleto</usg>
+                <def>designação da era cenozoica</def>
+                <xr type="synonymy">
+                    <ref type="entry">terciário</ref>
+                </xr>
+            </sense>
+            <sense n="2" xml:id="DLP-era_4_12">
+                <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+                <def>o mesmo que <xr>
+                        <ref type="entry">cenozoico</ref>
+                    </xr></def>
+            </sense>
+        </entry>
+    </sense>
+    <sense n="5" xml:id="DLP-era_5">
+        <def>numeração que indica um ano ou um certo número de anos</def>
+        <cit type="example">
+            <quote type="example">a era de 74 (1974); a era dos anos 90 (1990)</quote>
+        </cit>
+    </sense>
+    <sense n="6" xml:id="DLP-era_6">
+        <usg type="geographic">Bras.</usg>
+        <def>idade; número de anos</def>
+        <cit type="example">
+            <quote type="example">Estes miúdos são da mesma era.</quote>
+        </cit>
+    </sense>
+        <etym>
+            <etym type="inheritance">
+                <seg type="desc">Do latim</seg>
+                <cit type="etymon" xml:lang="la">
+
+                    <form><orth>aera</orth></form>
+                    </cit>
+                </etym>
+            </etym>
+</entry>
+
+

@@ -1,0 +1,58 @@
+<?xml-model href="http://dacl.zbr.pt/exist/rest/db/schemas/academia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<entry xmlns="http://www.tei-c.org/ns/1.0" type="monolexicalUnit" xml:lang="pt" xml:id="DLP.eon">
+    <form type="lemma">
+        <orth>éon</orth>
+        <pron>ˈɛɔn</pron>
+    </form>
+    <gramGrp>
+        <gram type="pos" norm="NOUN">nome</gram>
+        <gram type="gen">masculino</gram>
+    </gramGrp>
+    <sense n="1" xml:id="DLP-eon_1">
+        <def>divisão de tempo infinitamente longa</def>
+    </sense>
+    <sense xml:id="DLP-eon_2" n="2">
+        <usg type="domain">Filos.</usg>
+        <def>espírito que emana da inteligência eterna</def>
+    </sense>
+    <sense xml:id="DLP-eon_3" n="3">
+        <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+        <def>intervalo de tempo geológico (<xr>
+            <ref type="entry">unidade geocronológica</ref>
+        </xr>) durante o qual se formou um eonotema (<xr type="hypernymy">
+                <ref type="entry">unidade cronostratigráfica</ref>
+            </xr>)</def>
+        <form type="collocations">
+            <form type="collocation">
+                <orth>
+                    <ref type="oRef">
+                        <lbl>+</lbl>
+                    </ref>
+                    <seg>éon fanerozoico</seg>
+                </orth>
+                <gramGrp>
+                    <gram type="mwe" value="co-ocorrente_privilegiado"/>
+                </gramGrp>
+            </form>
+        </form>
+        <note type="enciclopedic">1) Na escala do tempo geológico, o éon é a categoria hierárquica
+            mais elevada. 2) O éon integra várias eras.</note>
+    </sense>
+    <etym>
+        <etym type="inheritance">
+            <seg type="desc">Do latim médio</seg>
+            <cit type="etymon" xml:lang="la">
+                <form><orth>aeon</orth></form>
+            </cit>
+            <seg type="desc">pelo grego</seg>
+            <cit type="etymon" xml:lang="grc">
+                <form><orth>ἀίων</orth></form>
+                <pc>'</pc>
+                <gloss>eternidade</gloss>
+                <pc>'</pc>
+            </cit>
+        </etym>
+    </etym>
+    <note type="plural">Plural: éones</note>
+</entry>

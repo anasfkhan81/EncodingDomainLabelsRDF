@@ -1,0 +1,30 @@
+@prefix lexicog: <http://www.w3.org/ns/lemon/lexicog#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/guarda_redes_rdf.xml#DLP.guarda_redes> a ontolex:LexicalEntry ;
+    lexinfo:etymology [ rdf:value "Da forma do verbo guardar"@pt ],
+        [ rdf:value "De forma do verbo guardar + rede"@pt ],
+        [ rdf:value "+ rede"@pt ] ;
+    lexinfo:gender lexinfo:feminine,
+        lexinfo:masculino ;
+    lexinfo:number lexinfo:plural,
+        lexinfo:singular ;
+    ontolex:canonicalForm [ ontolex:phoneticRep "ɡwardɐˈredəʃ"@pt ;
+            ontolex:writtenRep "guarda_redes"@pt ] ;
+    ontolex:sense [ lexinfo:domain [ rdf:value "" ] ;
+            lexinfo:geographic [ rdf:value "Brasil" ],
+                [ rdf:value "Brasil" ] ;
+            lexinfo:synonym <file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/guarda_redes_rdf.xml> ;
+            rdfs:comment """Termo recorrente em desportos coletivos, designadamente no futebol,
+            andebol, hóquei, etc.""" ;
+            skos:definition "jogador de uma equipa que atua na baliza, cuja função é impedir a entrada da bola na sua baliza com o objetivo de evitar que a equipa adversária marque golos ou pontos"@pt ;
+            lexicog:usageExample [ rdf:value """O guarda-redes, com uma exibição de luxo, foi a figura do
+                jogo."""@pt ] ] .
+
+<file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/guarda_redes_rdf.xml> rdf:value "arqueiro"@pt,
+        "goleiro"@pt .
+

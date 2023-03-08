@@ -1,0 +1,30 @@
+<?xml-model href="http://dacl.zbr.pt/exist/rest/db/schemas/academia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<!--This example shows the encoding of a defined polylexical term-->
+<entry xmlns="http://www.tei-c.org/ns/1.0" type="monolexicalUnit" xml:lang="pt" xml:id="DLP.unidade">
+    <form type="lemma">
+        <orth>unidade</orth>
+        <pron>uniˈdad(ə)</pron>
+    </form>
+    <gramGrp>
+        <gram type="pos" norm="NOUN">n.</gram>
+        <gram type="gen">f.</gram>
+    </gramGrp>
+    <sense xml:id="DLP.unidade_1">
+    </sense>
+    <!--[...]-->
+    <entry xml:lang="pt" xml:id="unidade_geocronologica" type="relatedEntry">
+        <form type="lemma"><orth>unidade geocronológica</orth>
+        </form>
+        <gramGrp>
+            <gram type="mwe" value="polylexical_term">
+            </gram>
+        </gramGrp>
+        <sense xml:id="unidade_22_geocronologica">
+            <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+            <!--SEE-->
+            <usg type="domain">Geologia</usg>
+        <def>unidade que divide o tempo geológico; subdivisão do tempo geológico</def>
+            </sense>
+    </entry>
+</entry>

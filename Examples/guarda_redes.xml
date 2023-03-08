@@ -1,0 +1,53 @@
+<?xml-model href="http://dacl.zbr.pt/exist/rest/db/schemas/academia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<entry xmlns="http://www.tei-c.org/ns/1.0" type="monolexicalUnit" xml:lang="pt" xml:id="DLP.guarda_redes">
+    <form type="lemma">
+        <orth>guarda_redes</orth>
+        <pron>ɡwardɐˈredəʃ</pron>
+    </form>
+    <gramGrp>
+        <gram type="pos" norm="NOUN">nome</gram>
+        <gram type="gen">masculino</gram>
+        <pc>e</pc>
+        <gram type="gen">feminino</gram>
+        <gram type="num">singular</gram>
+        <pc>e</pc>
+        <gram type="num">plural</gram>
+    </gramGrp>
+    <sense xml:id="DLP.guarda_redes_1">
+        <usg type="domain" corresp="#domain.sports"/>
+        <def>jogador de uma equipa que atua na baliza, cuja função é impedir a entrada da bola na sua baliza com o objetivo de evitar que a equipa adversária marque golos ou pontos</def>
+        <xr type="synonymy">
+            <ref type="entry">arqueiro</ref>
+        </xr>
+        <usg type="geographic" corresp="#geographic.brasil">Brasil</usg><xr type="synonymy">
+            <ref type="entry">goleiro</ref>
+        </xr>
+        <usg type="geographic" corresp="#geographic.brasil">Brasil</usg>
+        <cit type="example">
+            <quote type="example">O guarda-redes, com uma exibição de luxo, foi a figura do
+                jogo.</quote>
+        </cit>
+        <note type="use">Termo recorrente em desportos coletivos, designadamente no futebol,
+            andebol, hóquei, etc.</note>
+    </sense>
+    <etym>De forma do verbo guardar + rede</etym>
+    <etym type="grammaticalization">
+        <seg type="desc">Da forma do verbo</seg>
+        <cit type="etymon" xml:lang="pt">
+            <form>
+                <orth>guardar</orth>
+            </form>
+        </cit>
+    </etym>
+    <etym type="grammaticalization">
+    <metamark>+</metamark>
+    <cit type="etymon" xml:lang="pt">
+        <form>
+            <orth>rede</orth>
+        </form>
+    </cit>
+    </etym>
+</entry>
+
+

@@ -1,0 +1,90 @@
+<?xml-model href="http://dacl.zbr.pt/exist/rest/db/schemas/academia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<entry xmlns="http://www.tei-c.org/ns/1.0" type="monolexicalUnit" xml:lang="pt"
+    xml:id="DLP.paleozoico">
+    <form type="lemma">
+        <orth>paleozoico</orth>
+        <pron>paljɔˈzɔjku</pron>
+    </form>
+    <form type="inflected">
+        <orth>paleozoico</orth>
+        <gramGrp>
+            <gram type="gen">m.</gram>
+        </gramGrp>
+    </form>
+    <form type="inflected">
+        <orth>paleozoica</orth>
+        <gramGrp>
+            <gram type="gen">f.</gram>
+        </gramGrp>
+        <pron>paljɔˈzɔjkɐ</pron>
+    </form>
+    <gramGrp>
+        <gram type="pos" norm="ADJ">adj.</gram>
+    </gramGrp>
+    <sense xml:id="DLPC.paleozoico_1">
+        <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+        <def>relativo ou pertencente ao Paleozoico</def>
+        <xr type="synonymy">
+            <ref type="sense">primário</ref>
+        </xr>
+    </sense>
+    <gramGrp>
+        <gram type="pos" norm="NOUN">nome</gram>
+        <gram type="gen">masculino</gram>
+    </gramGrp>
+    <sense n="1" xml:id="DLP-paleozoico_2">
+        <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+        <def>designação do eratema inferior (<xr>
+                <ref type="entry">cronostratigráfica</ref>
+            </xr>) do eonotema Fanerozoico, correspondente ao conjunto de rochas formadas durante a
+            era respetiva (<xr>
+                <ref type="entry">unidade geocronológica</ref>
+            </xr>)</def>
+        <xr type="synonymy">
+            <ref type="entry">primário</ref>
+        </xr>
+    </sense>
+    <sense n="2" xml:id="DLP-paleozoico_3">
+        <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+        <def>designação da era inicial (<xr>
+                <ref type="entry">unidade geocronológica</ref>
+            </xr>) do eón Fanerozoico, correspondente ao intervalo de tempo durante o qual se
+            formaram as rochas do respetivo eratema (<xr>
+                <ref type="entry">cronostratigráfica</ref>
+            </xr>), entre 541 e 251 milhões de anos</def>
+        <xr type="synonymy">
+            <ref type="entry">primário</ref>
+        </xr>
+    </sense>
+    <etym>
+        <etym type="grammaticalization">
+            <seg type="desc">De</seg>
+            <cit type="etymon">
+                <form>
+                    <orth extent="pref">paleo-</orth>
+                </form>
+            </cit>
+        </etym>
+        <metamark>+</metamark>
+        <etym type="inheritance">
+            <seg type="desc">grego</seg>
+            <cit type="etymon" xml:lang="grc">
+                <pc>'</pc>
+                <gloss>animal</gloss>
+                <pc>'</pc>
+            </cit>
+        </etym>
+        <etym type="grammaticalization">
+            <seg type="desc">sufixo</seg>
+            <cit type="etymon">
+                <form>
+                    <orth extent="pref">-ico</orth>
+                </form>
+            </cit>
+        </etym>
+    </etym>
+    <note type="enciclopedic">O sistema/período paleozoico integra as séries/épocas: Câmbrico,
+        Ordovícico, Silúrico, Devónico, Carbonífero e Pérmico.</note>
+    <note type="case">Como nome, escreve-se com inicial maiúscula.</note>
+</entry>

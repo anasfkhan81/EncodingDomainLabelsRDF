@@ -1,0 +1,27 @@
+<?xml-model href="http://dacl.zbr.pt/exist/rest/db/schemas/academia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<entry xmlns="http://www.tei-c.org/ns/1.0" type="monolexicalUnit" xml:lang="pt" xml:id="DLP.trivela">
+    <form><orth>trivela</orth>
+        <pron>triˈvɛlɐ</pron>
+    </form>
+    <gramGrp>
+        <gram type="pos" norm="NOUN">n.</gram>
+        <gram type="gen">f.</gram>
+    </gramGrp>
+    <sense xml:id="DLP-trivela_1-dbf7a-1">
+        <usg type="domain" corresp="#domain.sports.football"/>
+        <def>técnica de passe, remate ou cruzamento em que se chuta a bola com a parte exterior do
+            pé, com o objetivo de dar um efeito especial à bola</def>
+        <cit type="example">
+            <quote>O Quaresma-bom, das fintas maravilhosas, dos remates fulgurantes, dos geniais
+                cruzamentos em trivela, do individualismo brilhante.</quote>
+            <bibl><title>Público</title>
+                <date>2007.11.27</date>
+            </bibl>
+        </cit>
+        <note type="media">https://www.youtube.com/watch?v=3yCL8vpmX18&amp;t=49s&amp;ab_channel=Canal11>
+        </note>
+    </sense>
+    <etym>De origem obscura</etym>
+</entry>
+
