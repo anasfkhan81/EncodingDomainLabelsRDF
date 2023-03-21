@@ -26,16 +26,47 @@ We will take examples from the Portuguese Academy Dictionary and ....
 [VERY ROUGH DRAFT]
 We will assume a basic knowledge of the [OntoLex-Lemon vocabulary](https://www.w3.org/2016/05/ontolex/), its extension dealing with lexicographic resources the [OntoLex-Lemon Lexicography Module (Lexicog)](https://www.w3.org/2019/09/lexicog/), and the [Lexinfo vocabulary](https://lexinfo.net/) which allows for the addition of more specific linguistic information to RDF vocabularies (specifying for instance part of speech information). 
 
-The [original lemon model](https://lemon-model.net/) (on which OntoLex-Lemon was based) allowed for the addition of topic information with the ```lemon:topic property``` to entries and more pertinently the use of the ```lemon:context``` to specify the technical register of a sense.  The latest version of OntoLex-Lemon does not contain these properties. The guidelines do however suggest the use of the ```dct:subject``` property to specify "under which conditions (context, register, domain, etc) it is valid to regard the lexical entry as having the ontological entity as meaning". In addition the Ontolex guidelines mention the ```usage``` property which is defined as indicating "usage conditions or pragmatic implications when using the lexical entry to refer to the given ontological meaning"; this property has the domain of ```ontolex:LexicalSense``` and the range ```rdfs:Resource```. In the lexicog vocabulary we have subproperties of usage, including lexicog:domain which is defined as a "usage marker which identifies the specialized field of knowledge in which a lexical unit is mainly used". 
-Ontolex therefore seems to offer us a way of marking a lexical entry as belonging to a certain domain (this is useful in case a term is only used in a technical sense) and a way of specifying that a specific sense of an entry is associated with a particular domain.
+The [original lemon model](https://lemon-model.net/) (on which OntoLex-Lemon was based) allowed for the addition of topic information to entries with the ```lemon:topic property``` and more pertinently the use of ```lemon:context``` to specify the technical register of a sense.  The latest version of OntoLex-Lemon does not contain these properties. The [guidelines](https://www.w3.org/2016/05/ontolex/) do however suggest the use of the ```dct:subject``` property to specify 
+> under which conditions (context, register, domain, etc) it is valid to regard the lexical entry as having the ontological entity as meaning.
 
-When the meaning specified refers to a specific technical sense of a word belonging to a domain we recommend using the ontolex:LexicalConcept class 
+
+In addition the Ontolex guidelines mention the ```ontolex:usage``` property which is defined as indicating 
+> usage conditions or pragmatic implications when using the lexical entry to refer to the given ontological meaning 
+
+this property has the domain of ```ontolex:LexicalSense``` and the range ```rdfs:Resource```. In the lexinfo vocabulary we have subproperties of ```ontolex:usage```, including ```lexinfo:domain``` which is defined as a 
+>usage marker which identifies the specialized field of knowledge in which a lexical unit is mainly used.
+
+Ontolex therefore seems to offer us a way of marking a lexical entry as belonging to a certain domain (this is useful in case a term is only used in a technical sense) and a way of specifying that a specific sense of an entry is associated with a particular domain. When the meaning specified refers to a specific technical sense of a word belonging to a domain **we recommend using the ```ontolex:LexicalConcept``` class** 
 
       <subject_resource> skos:definition 
                    [
                    rdf:value “This is an example of definition” ;
                    dct:source “Dictionary X” .
                    ] .
+
+      <file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/guarda_redes_rdf.xml#DLP.guarda_redes> a ontolex:LexicalEntry ;
+            lexinfo:etymology [ rdf:value "Da forma do verbo guardar"@pt ],
+             [ rdf:value "De forma do verbo guardar + rede"@pt ],
+             [ rdf:value "+ rede"@pt ] ;
+            lexinfo:gender lexinfo:feminine,
+            lexinfo:masculino ;
+            lexinfo:number lexinfo:plural,
+            lexinfo:singular ;
+            ontolex:canonicalForm [ ontolex:phoneticRep "ɡwardɐˈredəʃ"@pt ;
+            ontolex:writtenRep "guarda_redes"@pt ] ;
+            ontolex:sense [ lexinfo:domain [ rdf:value "" ] ;
+            lexinfo:geographic [ rdf:value "Brasil" ],
+                [ rdf:value "Brasil" ] ;
+            lexinfo:synonym <file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/guarda_redes_rdf.xml> ;
+            rdfs:comment """Termo recorrente em desportos coletivos, designadamente no futebol,
+            andebol, hóquei, etc.""" ;
+            skos:definition "jogador de uma equipa que atua na baliza, cuja função é impedir a entrada da bola na sua baliza com o objetivo de evitar que a             equipa adversária marque golos ou pontos"@pt ;
+            lexicog:usageExample [ rdf:value """O guarda-redes, com uma exibição de luxo, foi a figura do
+                jogo."""@pt ] ] .
+
+      <file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/guarda_redes_rdf.xml> rdf:value "arqueiro"@pt,
+            "goleiro"@pt .
+
 
 
 
