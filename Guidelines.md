@@ -24,11 +24,20 @@ We will take examples from the Portuguese Academy Dictionary and ....
 ## Relevant Semantic Web Vocabularies
 ## Ontolex-Lemon, Lexinfo and Lexicog
 [VERY ROUGH DRAFT]
-We will assume a basic knowledge of the OntoLex-Lemon vocabulary, its extension dealing with lexicographic resources Lexicog, and the ontology Lexinfo which allows for the addition of more specific linguistic information (concerning part of speech information. It is important to be able to work with lexicog which allows for the encoding of the editorial and typographical views mentioned in the TEI Guidelines, as opposed to the lexical view (covered by the original OntoLex-Lemon vocabulary) because domain labels are often (though not exclusively) associated with lexicographic resources. 
-The original lemon model (on which OntoLex-Lemon was based) allowed for the addition of topic information with the lemon:topic property to entries and more pertinently the use of the lemon:context to specify the technical register of a sense.  The latest version of OntoLex-Lemon does not contain these properties. The guidelines do however suggest the use of the dct:subject property to specify "under which conditions (context, register, domain, etc) it is valid to regard the lexical entry as having the ontological entity as meaning". An additional class mentioned by the guidelines is the usage property which is defined as indicated "usage conditions or pragmatic implications when using the lexical entry to refer to the given ontological meaning"; this property has the domain of ontolex:LexicalSense and the range rdfs:Resource. In the lexicon vocabulary we have subproperties of usage, including lexicog:domain which is defined as a "usage marker which identifies the specialized field of knowledge in which a lexical unit is mainly used". 
+We will assume a basic knowledge of the [OntoLex-Lemon vocabulary](https://www.w3.org/2016/05/ontolex/), its extension dealing with lexicographic resources the [OntoLex-Lemon Lexicography Module (Lexicog)](https://www.w3.org/2019/09/lexicog/), and the [Lexinfo vocabulary](https://lexinfo.net/) which allows for the addition of more specific linguistic information to RDF vocabularies (specifying for instance part of speech information). 
+
+The [original lemon model](https://lemon-model.net/) (on which OntoLex-Lemon was based) allowed for the addition of topic information with the ```lemon:topic property``` to entries and more pertinently the use of the ```lemon:context``` to specify the technical register of a sense.  The latest version of OntoLex-Lemon does not contain these properties. The guidelines do however suggest the use of the ```dct:subject``` property to specify "under which conditions (context, register, domain, etc) it is valid to regard the lexical entry as having the ontological entity as meaning". In addition the Ontolex guidelines mention the ```usage``` property which is defined as indicating "usage conditions or pragmatic implications when using the lexical entry to refer to the given ontological meaning"; this property has the domain of ```ontolex:LexicalSense``` and the range ```rdfs:Resource```. In the lexicog vocabulary we have subproperties of usage, including lexicog:domain which is defined as a "usage marker which identifies the specialized field of knowledge in which a lexical unit is mainly used". 
 Ontolex therefore seems to offer us a way of marking a lexical entry as belonging to a certain domain (this is useful in case a term is only used in a technical sense) and a way of specifying that a specific sense of an entry is associated with a particular domain.
 
 When the meaning specified refers to a specific technical sense of a word belonging to a domain we recommend using the ontolex:LexicalConcept class 
+
+      <subject_resource> skos:definition 
+                   [
+                   rdf:value “This is an example of definition” ;
+                   dct:source “Dictionary X” .
+                   ] .
+
+
 
 ## SKOS and SKOS-XL
 
