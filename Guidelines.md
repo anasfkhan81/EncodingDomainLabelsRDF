@@ -36,7 +36,10 @@ In addition the Ontolex guidelines mention the ```ontolex:usage``` property whic
 this property has the domain of ```ontolex:LexicalSense``` and the range ```rdfs:Resource```. In the lexinfo vocabulary we have subproperties of ```ontolex:usage```, including ```lexinfo:domain``` which is defined as a 
 >usage marker which identifies the specialized field of knowledge in which a lexical unit is mainly used.
 
-Ontolex therefore seems to offer us a way of marking a lexical entry as belonging to a certain domain (this is useful in case a term is only used in a technical sense) and a way of specifying that a specific sense of an entry is associated with a particular domain. When the meaning specified refers to a specific technical sense of a word belonging to a domain **we recommend using the ```ontolex:LexicalConcept``` class** 
+Ontolex therefore seems to offer us a way of marking a lexical entry as belonging to a certain domain (this is useful in case a term is only used in a technical sense) and a way of specifying that a specific sense of an entry is associated with a particular domain. 
+<!--- When the meaning specified refers to a specific technical sense of a word belonging to a domain **we recommend using the ```ontolex:LexicalConcept``` class** ---> 
+We recommend encoding the domain label as a SKOS concept and using the .
+
 
       <subject_resource> skos:definition 
                    [
