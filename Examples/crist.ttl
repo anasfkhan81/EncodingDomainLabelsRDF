@@ -17,4 +17,16 @@
             classificação e de descrição"""@pt ] .
 
 
-<http://example.org/class/mineralogia> rdf:type  skos:Concept.
+<http://example.org/class/mineralogia> rdf:type  skos:Concept; 
+    skos:prefLabel "mineralogia"@pt;
+    skos:prefLabel "minerology"@en; 
+    skos:narrower <http://example.org/class/geologia> .
+<http://example.org/class/geologia> rdf:type  skos:Concept; 
+    skos:prefLabel "geologia"@pt;
+    skos:prefLabel "geology"@en; 
+    skos:narrower <http://example.org/class/ciencas_da_terra> ;
+    skos:broader <http://example.org/class/mineralogia> .
+<http://example.org/class/ciencias_da_terra> rdf:type  skos:Concept;
+    skos:prefLabel "ciencias da terra"@pt;
+    skos:prefLabel "earth sciences"@en; 
+    skos:broader <http://example.org/class/mineralogia> .
