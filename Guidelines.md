@@ -76,7 +76,3 @@ We recommend encoding the domain label as a SKOS ```concept``` and using the ```
 
 
 
-## SKOS and SKOS-XL
-
-
-
