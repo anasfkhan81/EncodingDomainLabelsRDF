@@ -1,5 +1,5 @@
 # Guidelines for Encoding Domain Labels in RDF Using in OntoLex
-### Ana Salgado, Fahad Khan, Sara Carvalho, Rute Costa and  Margarida Ramos
+###  Fahad Khan, Ana Salgado, Bruno Almeida, Sara Carvalho, Rute Costa, Margarida Ramos and Raquel Silva
 
 ## Domain Labels - An Introduction
 
@@ -40,35 +40,38 @@ Ontolex therefore seems to offer us a way of marking a lexical entry as belongin
 <!--- When the meaning specified refers to a specific technical sense of a word belonging to a domain **we recommend using the ```ontolex:LexicalConcept``` class** ---> 
 We recommend encoding the domain label as a SKOS ```concept``` and using the ```skos:narrower``` and ```skos:broader``` relations to encode the relations between different domains.
 
+      @prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+      @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+      @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+      @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-      <subject_resource> skos:definition 
-                   [
-                   rdf:value “This is an example of definition” ;
-                   dct:source “Dictionary X” .
-                   ] .
+      <http://example.org/class/DLP_cristalografia> a ontolex:LexicalEntry ;
+          lexinfo:etymology [ rdf:value "Do grego κρύσταλλος cristal + sufixo -grafia"@pt ] ;
+          lexinfo:gender lexinfo:feminine ;
+          ontolex:canonicalForm [ 
+                                  ontolex:phoneticRep "kriʃtɐluɡrɐˈfiɐ"@pt ;
+                                  ontolex:writtenRep "cristalografia"@pt 
+                                  ] ;
+          ontolex:sense [ lexinfo:domain <http://example.org/class/mineralogia>;
+                  skos:definition """ciência que estuda os cristais, considerando aspetos tais como o seu crescimento, a
+                  estrutura interna e as propriedades físicas decorrentes da regularidade dessa estrutura,
+                  em particular, as formas que apresentam, cuja simetria utiliza como método de
+                  classificação e de descrição"""@pt ] .
 
-      <file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/guarda_redes_rdf.xml#DLP.guarda_redes> a ontolex:LexicalEntry ;
-            lexinfo:etymology [ rdf:value "Da forma do verbo guardar"@pt ],
-             [ rdf:value "De forma do verbo guardar + rede"@pt ],
-             [ rdf:value "+ rede"@pt ] ;
-            lexinfo:gender lexinfo:feminine,
-            lexinfo:masculino ;
-            lexinfo:number lexinfo:plural,
-            lexinfo:singular ;
-            ontolex:canonicalForm [ ontolex:phoneticRep "ɡwardɐˈredəʃ"@pt ;
-            ontolex:writtenRep "guarda_redes"@pt ] ;
-            ontolex:sense [ lexinfo:domain [ rdf:value "" ] ;
-            lexinfo:geographic [ rdf:value "Brasil" ],
-                [ rdf:value "Brasil" ] ;
-            lexinfo:synonym <file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/guarda_redes_rdf.xml> ;
-            rdfs:comment """Termo recorrente em desportos coletivos, designadamente no futebol,
-            andebol, hóquei, etc.""" ;
-            skos:definition "jogador de uma equipa que atua na baliza, cuja função é impedir a entrada da bola na sua baliza com o objetivo de evitar que a             equipa adversária marque golos ou pontos"@pt ;
-            lexicog:usageExample [ rdf:value """O guarda-redes, com uma exibição de luxo, foi a figura do
-                jogo."""@pt ] ] .
 
-      <file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/guarda_redes_rdf.xml> rdf:value "arqueiro"@pt,
-            "goleiro"@pt .
+      <http://example.org/class/mineralogia> rdf:type  skos:Concept; 
+          skos:prefLabel "mineralogia"@pt;
+          skos:prefLabel "minerology"@en; 
+          skos:narrower <http://example.org/class/geologia> .
+      <http://example.org/class/geologia> rdf:type  skos:Concept; 
+          skos:prefLabel "geologia"@pt;
+          skos:prefLabel "geology"@en; 
+          skos:narrower <http://example.org/class/ciencas_da_terra> ;
+          skos:broader <http://example.org/class/mineralogia> .
+      <http://example.org/class/ciencias_da_terra> rdf:type  skos:Concept;
+          skos:prefLabel "ciencias da terra"@pt;
+          skos:prefLabel "earth sciences"@en; 
+          skos:broader <http://example.org/class/mineralogia> .
 
 
 
