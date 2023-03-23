@@ -3,14 +3,18 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/output-crist.xml#DLP.cristalografia> a ontolex:LexicalEntry ;
+<http://example.org/class/DLP_cristalografia> a ontolex:LexicalEntry ;
     lexinfo:etymology [ rdf:value "Do grego κρύσταλλος cristal + sufixo -grafia"@pt ] ;
-    lexinfo:gender lexinfo:GenderValueRemainsToBeDetermined ;
-    ontolex:canonicalForm [ ontolex:phoneticRep "kriʃtɐluɡrɐˈfiɐ"@pt ;
-            ontolex:writtenRep "cristalografia"@pt ] ;
-    ontolex:sense [ lexinfo:domain [ rdf:value "" ] ;
+    lexinfo:gender lexinfo:feminine ;
+    ontolex:canonicalForm [ 
+                            ontolex:phoneticRep "kriʃtɐluɡrɐˈfiɐ"@pt ;
+                            ontolex:writtenRep "cristalografia"@pt 
+                            ] ;
+    ontolex:sense [ lexinfo:domain <http://example.org/class/mineralogia>;
             skos:definition """ciência que estuda os cristais, considerando aspetos tais como o seu crescimento, a
             estrutura interna e as propriedades físicas decorrentes da regularidade dessa estrutura,
             em particular, as formas que apresentam, cuja simetria utiliza como método de
             classificação e de descrição"""@pt ] .
 
+
+<http://example.org/class/mineralogia> rdf:type  skos:Concept.
