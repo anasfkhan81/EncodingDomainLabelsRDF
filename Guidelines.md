@@ -1,5 +1,5 @@
 # Guidelines for Encoding Domain Labels in RDF Using in OntoLex
-### Sara Carvalho, Rute Costa, Fahad Khan,  Margarida Ramos and Ana Salgado
+### Ana Salgado, Fahad Khan, Sara Carvalho, Rute Costa and  Margarida Ramos
 
 ## Domain Labels - An Introduction
 
@@ -38,7 +38,7 @@ this property has the domain of ```ontolex:LexicalSense``` and the range ```rdfs
 
 Ontolex therefore seems to offer us a way of marking a lexical entry as belonging to a certain domain (this is useful in case a term is only used in a technical sense) and a way of specifying that a specific sense of an entry is associated with a particular domain. 
 <!--- When the meaning specified refers to a specific technical sense of a word belonging to a domain **we recommend using the ```ontolex:LexicalConcept``` class** ---> 
-We recommend encoding the domain label as a SKOS concept and using the .
+We recommend encoding the domain label as a SKOS ```concept``` and using the ```skos:narrower``` and ```skos:broader``` relations to encode the relations between different domains.
 
 
       <subject_resource> skos:definition 
