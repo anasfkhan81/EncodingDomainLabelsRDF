@@ -42,7 +42,8 @@ We recommend encoding the domain label as a SKOS ```concept``` and using the ```
 
 In the first example 
 
-![Cristalografia Example](Examples/cristalografia_DLP.png "Cristalografia Example")
+![Cristalografia Example![cristalografia_DLP](https://user-images.githubusercontent.com/45368069/227588665-33146354-1dd5-4497-9594-f5c1567008e9.png)
+](Examples/cristalografia_DLP.png "Cristalografia Example")
 
 
 
