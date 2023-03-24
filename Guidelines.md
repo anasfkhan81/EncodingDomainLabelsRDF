@@ -84,5 +84,6 @@ In the first example
 
 ## References
 
-Domain labels are tags associated w
+Svensén, B. (2009). A Handbook of Lexicography: The Theory and Practice of Dictionary Making. Cambridge: Cambridge University Press.
+
 
