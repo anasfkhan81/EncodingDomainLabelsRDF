@@ -40,6 +40,13 @@ Ontolex therefore seems to offer us a way of marking a lexical entry as belongin
 <!--- When the meaning specified refers to a specific technical sense of a word belonging to a domain **we recommend using the ```ontolex:LexicalConcept``` class** ---> 
 We recommend encoding the domain label as a SKOS ```concept``` and using the ```skos:narrower``` and ```skos:broader``` relations to encode the relations between different domains.
 
+In the first example 
+
+![MarineGEO circle logo](/Example/cristalografia_DLP.png "MarineGEO logo")
+
+
+
+
       @prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
       @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
       @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
