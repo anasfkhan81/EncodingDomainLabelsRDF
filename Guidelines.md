@@ -78,5 +78,6 @@ Some additional information which is relevant for our example is that the domain
           skos:prefLabel "ciencias da terra"@pt;
           skos:prefLabel "earth sciences"@en; 
           skos:broader <http://example.org/class/mineralogia> .
-       
+
 # References
+
