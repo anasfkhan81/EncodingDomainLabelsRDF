@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-model href="https://raw.githubusercontent.com/DARIAH-ERIC/lexicalresources/dev-0.9.2/Schemas/TEILex0/out/TEILex0.rng" 
+    type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/DARIAH-ERIC/lexicalresources/dev-0.9.2/Schemas/TEILex0/out/TEILex0.rng" 
+    type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ACL.DLP">
+   <teiHeader>
+         <!-- [...] -->
+   </teiHeader>
+   <text>
+      <body>
+         <entry xmlns="http://www.tei-c.org/ns/1.0" type="monolexicalUnit" xml:lang="pt" xml:id="DLP.aeronautica">
+   <form type="lemma">
+      <orth>aeronáutica</orth>
+   </form>
+   <gramGrp>
+      <gram type="pos" norm="NOUN">n.</gram>
+      <gram type="gen">f.</gram>
+   </gramGrp>
+            <sense n="1" xml:id="DLP-aeronautica.s.1">
+               <usg type="domain">FÍSICA</usg>
+               <def>ciência que estuda as condições de navegação aérea, no duplo aspeto da sustentação e do deslocamento, no ar, de balões, planadores, aviões, helicópteros</def>
+            </sense>
+            <sense n="2" xml:id="DLP-aeronautica.s.2">
+               <def>ciência ou prática de navegação aérea</def>
+               <xr type="synonymy">
+                  <ref type="entry">aeronavegação</ref>
+               </xr>
+            </sense>
+            <sense n="3" xml:id="DLP-aeronautica.s.3">
+               <def>técnica de construção e reparação de aviões e de outros aparelhos de locomoção aérea; setor industrial que se ocupa desta construção</def>
+            </sense>
+            <sense n="4" xml:id="DLP-aeronautica.s.4">
+               <usg type="domain">AERONÁUTICA</usg>
+               <def>conjunto de organismos de que dependem os meios, serviços e pessoal respeitantes à navegação aérea</def>
+            </sense>
+            <entry xml:lang="pt" xml:id="DLP-aeronautica_1_1" type="relatedEntry">
+               <form type="lemma"><orth>aeronáutica civil</orth>
+         </form>
+         <gramGrp>
+            <gram type="mwe" value="polylexical_term"> </gram>
+         </gramGrp>
+               <sense xml:id="DLP-aeronautica_1_2">
+            <def>navegação aérea para transporte de passageiros, correio e mercadorias</def>
+         </sense>
+      </entry>
+            <entry xml:lang="pt" xml:id="DLP-aeronautica_1_3" type="relatedEntry">
+               <form type="lemma"><orth>aeronáutica militar</orth>
+         </form>
+         <gramGrp>
+            <gram type="mwe" value="polylexical_term"> </gram>
+         </gramGrp>
+               <sense xml:id="DLP-aeronautica_1_4">
+                  <def>parte do exército constituída pelos meios aéreos, suas tripulações e paraquedistas</def>
+         </sense>
+      </entry>
+            <entry xml:lang="pt" xml:id="DLP-aeronautica_1_5" type="relatedEntry">
+               <form type="lemma"><orth>aeronáutica naval</orth>
+         </form>
+         <gramGrp>
+            <gram type="mwe" value="polylexical_term"> </gram>
+         </gramGrp>
+               <sense xml:id="DLP-aeronautica_1_6">
+            <def>forças aéreas pertencentes à marinha de guerra</def>
+         </sense>
+      </entry>     
+      <etym type="inheritance">
+         <seg type="desc">De</seg>
+         <cit type="etymon" xml:lang="pt">
+            <form><orth>aeronáutico</orth></form>
+         </cit>
+      </etym>
+         </entry>
+      </body>
+   </text>
+</TEI>
