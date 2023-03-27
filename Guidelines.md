@@ -1,4 +1,4 @@
-# Guidelines for Encoding Domain Labels in RDF Using in OntoLex
+# Guidelines for Encoding Domain Labels in RDF Using in OntoLex and SKOS
 ###  Fahad Khan, Ana Salgado, Bruno Almeida, Sara Carvalho, Rute Costa, Margarida Ramos and Raquel Silva
 
 - [Guidelines for Encoding Domain Labels in RDF Using in OntoLex](#guidelines-for-encoding-domain-labels-in-rdf-using-in-ontolex)
@@ -29,27 +29,32 @@ Assuming that the unmarked lexicon belongs to the general lexicon, as we shall s
 
 ### Examples
 In what follows we will take our examples from the Portuguese Academy Dictionary and ....
-## Relevant Semantic Web Vocabularies
-## Ontolex-Lemon, Lexinfo and Lexicog
-We will assume a basic knowledge of the [OntoLex-Lemon vocabulary](https://www.w3.org/2016/05/ontolex/), its extension dealing with lexicographic resources the [OntoLex-Lemon Lexicography Module (Lexicog)](https://www.w3.org/2019/09/lexicog/), and the [Lexinfo vocabulary](https://lexinfo.net/) which allows for the addition of more specific linguistic information to RDF vocabularies (specifying for instance part of speech information). 
 
-The [original lemon model](https://lemon-model.net/) (on which OntoLex-Lemon was based) allowed for the addition of topic information to entries with the ```lemon:topic property``` and more pertinently the use of ```lemon:context``` to specify the technical register of a sense.  The latest version of OntoLex-Lemon does not contain these properties. The [guidelines](https://www.w3.org/2016/05/ontolex/) do however suggest the use of the ```dct:subject``` property to specify 
+## Using OntoLex and SKOS for Encoding Domain Labels 
+### Requirements
+In what follows we will assume a basic knowledge of the [OntoLex-Lemon vocabulary](https://www.w3.org/2016/05/ontolex/), its extension dealing with lexicographic resources the [OntoLex-Lemon Lexicography Module (Lexicog)](https://www.w3.org/2019/09/lexicog/), and the [Lexinfo vocabulary](https://lexinfo.net/) which allows for the addition of more specific linguistic information to RDF vocabularies (specifying for instance part of speech information). In addition, will also assume some familiarity with the [SKOS vocabulary](https://www.w3.org/TR/swbp-skos-core-spec/). 
+### Best Practises for Domain Labels
+The [original _lemon_ model](https://lemon-model.net/) (on which the current OntoLex-Lemon is based) allowed for the addition of topic information to entries with the ```lemon:topic property``` and, more pertinently, the use of ```lemon:context``` to specify the technical register of a sense.  The latest version of OntoLex-Lemon does not contain these properties. 
+
+The [guidelines](https://www.w3.org/2016/05/ontolex/) do however suggest the use of the ```dct:subject``` property to specify: 
 > under which conditions (context, register, domain, etc) it is valid to regard the lexical entry as having the ontological entity as meaning.
 
-
-In addition the Ontolex guidelines mention the ```ontolex:usage``` property which is defined as indicating 
+In addition the Ontolex guidelines mention the ```ontolex:usage``` property which is defined as indicating: 
 > usage conditions or pragmatic implications when using the lexical entry to refer to the given ontological meaning 
 
-this property has the domain of ```ontolex:LexicalSense``` and the range ```rdfs:Resource```. In the lexinfo vocabulary we have subproperties of ```ontolex:usage```, including ```lexinfo:domain``` which is defined as a 
+This property has the domain of ```ontolex:LexicalSense``` and the range ```rdfs:Resource```. In the lexinfo vocabulary we have subproperties of ```ontolex:usage```, including ```lexinfo:domain``` which is defined as a: 
 >usage marker which identifies the specialized field of knowledge in which a lexical unit is mainly used.
 
-Ontolex therefore seems to offer us a way of marking a lexical entry as belonging to a certain domain (this is useful in case a term is only used in a technical sense) and a way of specifying that a specific sense of an entry is associated with a particular domain. 
-<!--- When the meaning specified refers to a specific technical sense of a word belonging to a domain **we recommend using the ```ontolex:LexicalConcept``` class** ---> 
-We recommend encoding the domain label as a SKOS ```concept``` and using the ```skos:narrower``` and ```skos:broader``` relations to encode the relations between different domains. In the following examples we will look at how to encode several different kinds of examples of domain labels, trying to capture several different varieties of use case. 
-
+Ontolex therefore offers us a way of marking a lexical entry as belonging to a certain domain (this is useful in case a term is only used in a technical sense) and a way of specifying that a specific sense of an entry is associated with a particular domain. We recommend encoding the domain label as a SKOS ```concept``` and using the ```skos:narrower``` and ```skos:broader``` relations to encode the relations between different domains. 
 To summarise 
+1. James Madison
+2. James Monroe
+3. John Quincy Adams
 
-### Cristalografia
+In the following examples we will look at how to encode several different kinds of examples of domain labels, trying to capture several different varieties of use case:
+
+<!--- When the meaning specified refers to a specific technical sense of a word belonging to a domain **we recommend using the ```ontolex:LexicalConcept``` class** --->
+### Encoding hierarchical domain labels: _Cristalografia_
 
 In the first example we show how to encode an entry which has a sense that has been marked with a domain label. In this case the entry is for the Portuguese word _cristalografia_ 'crystallography' from the Portuguese Academy Dictionary which as the following diagram shows has one sense and this sense is marked with the label MINERALOGIA referring to the domain of mineralogy. 
 
