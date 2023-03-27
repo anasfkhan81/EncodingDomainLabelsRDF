@@ -34,12 +34,10 @@ In what follows we will take our examples from the Portuguese Academy Dictionary
 ### Requirements
 In what follows we will assume a basic knowledge of the [OntoLex-Lemon vocabulary](https://www.w3.org/2016/05/ontolex/), its extension dealing with lexicographic resources the [OntoLex-Lemon Lexicography Module (Lexicog)](https://www.w3.org/2019/09/lexicog/), and the [Lexinfo vocabulary](https://lexinfo.net/) which allows for the addition of more specific linguistic information to RDF vocabularies (specifying for instance part of speech information). In addition, will also assume some familiarity with the [SKOS vocabulary](https://www.w3.org/TR/swbp-skos-core-spec/). 
 ### Best Practises for Domain Labels
-The [original _lemon_ model](https://lemon-model.net/) (on which the current OntoLex-Lemon is based) allowed for the addition of topic information to entries with the ```lemon:topic property``` and, more pertinently, the use of ```lemon:context``` to specify the technical register of a sense.  The latest version of OntoLex-Lemon does not contain these properties. 
-
-The [guidelines](https://www.w3.org/2016/05/ontolex/) do however suggest the use of the ```dct:subject``` property to specify: 
+The [original _lemon_ model](https://lemon-model.net/) (on which the current OntoLex-Lemon is based) allowed for the addition of topic information to entries with the ```lemon:topic property``` and, more pertinently, the use of ```lemon:context``` to specify the technical register of a sense.  The latest version of OntoLex-Lemon does not contain these properties. The [OntoLex-Lemon guidelines](https://www.w3.org/2016/05/ontolex/) do however suggest the use of the ```dct:subject``` property to specify: 
 > under which conditions (context, register, domain, etc) it is valid to regard the lexical entry as having the ontological entity as meaning.
 
-In addition the Ontolex guidelines mention the ```ontolex:usage``` property which is defined as indicating: 
+In addition they mention the ```ontolex:usage``` property which is defined as indicating: 
 > usage conditions or pragmatic implications when using the lexical entry to refer to the given ontological meaning 
 
 This property has the domain of ```ontolex:LexicalSense``` and the range ```rdfs:Resource```. In the lexinfo vocabulary we have subproperties of ```ontolex:usage```, including ```lexinfo:domain``` which is defined as a: 
