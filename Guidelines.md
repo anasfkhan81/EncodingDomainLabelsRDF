@@ -1,5 +1,5 @@
 # Guidelines for Encoding Domain Labels in RDF Using in OntoLex and SKOS
-###  Fahad Khan, Ana Salgado, Bruno Almeida, Sara Carvalho, Rute Costa, Margarida Ramos and Raquel Silva
+###  Fahad Khan, Ana Salgado, Rute Costa, Bruno Almeida, Sara Carvalho , Margarida Ramos and Raquel Silva
 
 - [Guidelines for Encoding Domain Labels in RDF Using in OntoLex](#guidelines-for-encoding-domain-labels-in-rdf-using-in-ontolex)
   * [Domain Labels - An Introduction](#domain-labels---an-introduction)
@@ -47,7 +47,7 @@ Ontolex therefore offers us a way of marking a lexical entry as belonging to a c
 
 We therefore recommend the following steps when encoding domain label information in lexical resources:
 
-1. James Madison
+1. In the case the 
 2. James Monroe
 3. John Quincy Adams
 
