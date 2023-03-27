@@ -38,6 +38,8 @@ Ontolex therefore seems to offer us a way of marking a lexical entry as belongin
 <!--- When the meaning specified refers to a specific technical sense of a word belonging to a domain **we recommend using the ```ontolex:LexicalConcept``` class** ---> 
 We recommend encoding the domain label as a SKOS ```concept``` and using the ```skos:narrower``` and ```skos:broader``` relations to encode the relations between different domains. In the following examples we will look at how to encode several different kinds of examples of domain labels, trying to capture several different varieties of use case. 
 
+To summarise 
+
 ### Cristalografia
 
 In the first example we show how to encode an entry which has a sense that has been marked with a domain label. In this case the entry is for the Portuguese word _cristalografia_ 'crystallography' from the Portuguese Academy Dictionary which as the following diagram shows has one sense and this sense is marked with the label MINERALOGIA referring to the domain of mineralogy. 
