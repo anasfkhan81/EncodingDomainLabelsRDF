@@ -11,7 +11,7 @@
     ontolex:canonicalForm [ ontolex:phoneticRep "futəbuˈliʃtɐ"@pt ;
             ontolex:writtenRep "futebolista"@pt ] ;
     ontolex:sense [ skos:definition "que joga futebol"@pt ],
-        [ lexinfo:domain [ rdf:value "" ] ;
+        [ lexinfo:domain <http://example.org/class/football> ;
             skos:definition "atleta profissional que joga futebol; jogador de futebol"@pt ;
             lexicog:usageExample [ rdf:value "O clube contratou dois futebolistas estrangeiros."@pt ] ] .
 
