@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-model href="https://raw.githubusercontent.com/DARIAH-ERIC/lexicalresources/master/Schemas/TEILex0/out/TEILex0.rng" 
+    type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" 
+    type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="MORAIS.1.DLP">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="full" xml:lang="en">Morais Dictionary (1st ed., 1789): digital edition</title>
+         </titleStmt>
+         <editionStmt>  
+            <edition>XML edition using GroBID-dictionaries</edition>
+         </editionStmt>  
+         <!-- [...] -->
+         <publicationStmt>
+            <publisher>NOVA CLUNL</publisher>
+            <authority role="sponsor">FCT – Fundação para a Ciência e Tecnologia</authority>
+            <pubPlace>Lisboa</pubPlace>
+            <date>2021-2024</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Creative Commons Attribution 4.0 International (CC BY 4.0)
+               </licence>
+            </availability>
+         </publicationStmt>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <!-- In progress. -->
+            <p>Prepared within MorDigital Project (PTDC/LLT-LIN/6841/2020).</p>
+            <p>We already had access to OCR’ed versions of the dictionary editions at the beginning
+               of the project. These files needed to be post-corrected. For this, we decided to use
+               ABBYY FineReader.</p>
+         </projectDesc>
+         <editorialDecl>
+            <!-- In progress. -->
+            <p>Original spelling and typography is retained. Errors found in original OCR were all corrected.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language role="objectLanguage" ident="pt">Portuguese</language>
+            <language role="workingLanguage" ident="pt">Portuguese</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <entry xmlns="http://www.tei-c.org/ns/1.0" xml:id="MORAIS.1.DLP.CITERIOR" type="mainEntry" xml:lang="pt">
+            <form type="lemma">
+               <orth>CITERIOR</orth>
+            </form>
+            <metamark function="lemmaDelimiter">,</metamark>
+            <gramGrp>
+               <gram type="pos" norm="ADJECTIVE">adj.</gram>
+            </gramGrp>
+            <sense xml:id="MORAIS.1.DLP.CITERIOR.s.1">
+               <def>que fica áquem de algum poſto, ou ſitio</def>
+               <pc>.</pc>
+               <cit type="example">
+                  <bibl type="attestation" corresp="mor.bibl.authr.titl">
+                     <!-- point to Monarchia Lufitana -->
+                     <title>M. Luſ.</title>
+                     <metamark function="quotationDelimiter">,,</metamark>
+                     <lbl>usa-se na</lbl>
+                     <usg type="domain">t. Geograf.</usg>
+                     <quote>Hespanha citerior, e ulterior</quote>
+                     <pc>.</pc>
+                     </bibl>
+                  </cit>
+            </sense>
+         </entry>
+      </body>
+   </text>
+</TEI>
