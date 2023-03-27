@@ -192,8 +192,8 @@
         </xsl:variable>
         <xsl:variable name="lexinfoGender">
             <xsl:choose>
-                <xsl:when test="$sourceReference = 'masculin' or $sourceReference = 'masculine'">masculine</xsl:when>
-                <xsl:when test="$sourceReference = 'féminin' or $sourceReference = 'feminine'">feminine</xsl:when>
+                <xsl:when test="$sourceReference = 'masculin' or $sourceReference = 'masculine' or $sourceReference = 'masculino'" >masculine</xsl:when>
+                <xsl:when test="$sourceReference = 'féminin' or $sourceReference = 'feminine'  or $sourceReference = 'feminino'">feminine</xsl:when>
                 <xsl:when test="$sourceReference = 'neutre' or $sourceReference = 'neuter'">neuter</xsl:when>
                 <xsl:otherwise>GenderValueRemainsToBeDetermined for: <xsl:value-of select="$sourceReference"
                     /></xsl:otherwise>
