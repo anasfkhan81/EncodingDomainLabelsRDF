@@ -4,7 +4,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/futebolista_DLP_rdf.xml#DLP.futebolista> a ontolex:LexicalEntry ;
+<http://example.org/class/futebolista> a ontolex:LexicalEntry ;
     lexinfo:etymology [ rdf:value "De futebol + -ista"@pt ] ;
     lexinfo:gender lexinfo:feminine,
         lexinfo:masculine ;
@@ -15,3 +15,13 @@
             skos:definition "atleta profissional que joga futebol; jogador de futebol"@pt ;
             lexicog:usageExample [ rdf:value "O clube contratou dois futebolistas estrangeiros."@pt ] ] .
 
+<http://example.org/class/football> rdf:type  skos:Concept ; 
+    skos:prefLabel "futebol"@pt;
+    skos:prefLabel "football"@en;
+    skos:narrower <http://example.org/class/sport>.
+
+
+<http://example.org/class/sport> rdf:type  skos:Concept; 
+    skos:prefLabel "desporte"@pt;
+    skos:prefLabel "sport"@en;
+    skos:broader <http://example.org/class/football>.
