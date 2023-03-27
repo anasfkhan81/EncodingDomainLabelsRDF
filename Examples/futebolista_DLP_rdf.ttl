@@ -20,7 +20,6 @@
     skos:prefLabel "football"@en;
     skos:narrower <http://example.org/class/sport>.
 
-
 <http://example.org/class/sport> rdf:type  skos:Concept; 
     skos:prefLabel "desporte"@pt;
     skos:prefLabel "sport"@en;
