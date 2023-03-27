@@ -47,7 +47,7 @@ Ontolex therefore offers us a way of marking a lexical entry as belonging to a c
 
 We therefore recommend the following steps when encoding domain label information in lexical resources:
 
-1. James Madison
+1. In the case the 
 2. James Monroe
 3. John Quincy Adams
 
