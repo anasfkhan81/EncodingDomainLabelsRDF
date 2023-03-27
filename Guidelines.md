@@ -1,6 +1,15 @@
 # Guidelines for Encoding Domain Labels in RDF Using in OntoLex
 ###  Fahad Khan, Ana Salgado, Bruno Almeida, Sara Carvalho, Rute Costa, Margarida Ramos and Raquel Silva
 
+- [Guidelines for Encoding Domain Labels in RDF Using in OntoLex](#guidelines-for-encoding-domain-labels-in-rdf-using-in-ontolex)
+  * [Domain Labels - An Introduction](#domain-labels---an-introduction)
+    + [Background](#background)
+    + [Examples](#examples)
+  * [Relevant Semantic Web Vocabularies](#relevant-semantic-web-vocabularies)
+  * [Ontolex-Lemon, Lexinfo and Lexicog](#ontolex-lemon--lexinfo-and-lexicog)
+    + [Cristalografia](#cristalografia)
+  * [References](#references)
+
 ## Domain Labels - An Introduction
 
 Domain labels are tags associated with individual lexicographic articles or senses in a dictionary or similar lexicographic resource which indicate that a lexical unit or a specific sense belongs to a specialised domain, e.g., Sport or Medicine. Dictionary domain labels can be organised in terms of taxonomies or thesauri, something which makes the original resource easier to navigate and to integrate with other datasets. Such labels play an important role in many lexicographic resources but there hasn’t been much work on modelling these in linked data in a way that better exploits the possibilities of the Semantic Web stack. 
@@ -83,7 +92,7 @@ Some additional information which is relevant for our example is that the domain
           skos:prefLabel "earth sciences"@en; 
           skos:broader <http://example.org/class/mineralogia> .
 
-# References
+## References
 
 Svensén, B. (2009). A Handbook of Lexicography: The Theory and Practice of Dictionary Making. Cambridge: Cambridge University Press.
 
