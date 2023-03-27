@@ -46,7 +46,9 @@ This property has the domain of ```ontolex:LexicalSense``` and the range ```rdfs
 >usage marker which identifies the specialized field of knowledge in which a lexical unit is mainly used.
 
 Ontolex therefore offers us a way of marking a lexical entry as belonging to a certain domain (this is useful in case a term is only used in a technical sense) and a way of specifying that a specific sense of an entry is associated with a particular domain. We recommend encoding the domain label as a SKOS ```concept``` and using the ```skos:narrower``` and ```skos:broader``` relations to encode the relations between different domains. 
-To summarise 
+
+We therefore recommend the following steps when encoding domain label information in lexical resources:
+
 1. James Madison
 2. James Monroe
 3. John Quincy Adams
