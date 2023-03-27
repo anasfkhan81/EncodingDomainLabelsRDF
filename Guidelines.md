@@ -42,7 +42,9 @@ We recommend encoding the domain label as a SKOS ```concept``` and using the ```
 
 In the first example we show how to encode an entry which has a sense that has been marked with a domain label. In this case the entry is for the Portuguese word _cristalografia_ 'crystallography' from the Portuguese Academy Dictionary which as the following diagram shows has one sense and this sense is marked with the label MINERALOGIA referring to the domain of mineralogy. 
 
-![Cristalografia Example](Examples/cristalografia_DLP.png "Cristalografia Example")
+![Cristalografia Example![cristalografia_DLP](https://user-images.githubusercontent.com/45368069/227588665-33146354-1dd5-4497-9594-f5c1567008e9.png)
+](Examples/cristalografia_DLP.png "Cristalografia Example")
+<!--![Cristalografia Example](Examples/cristalografia_DLP.png "Cristalografia Example")-->
 
 Some additional information which is relevant for our example is that the domain of MINERALOGIA in the Portuguese Academy Dictionary subject hierarchy is a subdomain of GEOLOGIA 'geology' which is in turn a subdomain of CIENCAS DA TERRA 'earth sciences'.  We can represent the entry as follows in RDF using the following vocabularies: OntoLex-Lemon, lexinfo, and SKOS.
 
@@ -81,3 +83,18 @@ Some additional information which is relevant for our example is that the domain
 
 # References
 
+Svensén, B. (2009). A Handbook of Lexicography: The Theory and Practice of Dictionary Making. Cambridge: Cambridge University Press.
+
+Hausmann, F. J. (1989). Die Markierung in eineim allgemeinen einsprachigen Wörterbuch: eine Übersicht. In F. J. Hausmann, O. Reichmann, H. E. Wiegand, L. Zgusta (Eds.), Wörterbücher. Ein internationales Handbuch zur Lexikographie (pp. 649–657). Berlin: Walter de Gruyter.
+
+Sager, J. C. (1990). A practical course in terminology processing. Amsterdam: John Benjamins Publishing Company.
+
+ISO 1087. (2019). Terminology Work – Vocabulary – Part 1: Theory and Application. Geneva: International Organization for Standardization.
+
+Salgado, A., Costa, R. & Tasovac, T. (2019). Improving the consistency of usage labelling in dictionaries with TEI Lex-0. Lexicography: Journal of ASIALEX, 6(2), 133–156. doi:10.1007/s40607-019-00061-x.
+
+Estopà, R. B. (1998). El léxico especializado en los diccionarios de lengua general: las marcas temáticas. Revista de la Sociedad Española de Linguística, 28(2), 359–387.
+
+Atkins, B. T. S., & Rundell, M. (2008). The Oxford Guide to Practical Lexicography. New York: Oxford University Press.
+
+Verkuyl, H. J., Janssen, M., & Jansen, F. (2003). The codification of usage by labels. In Sterkenburg, P. (Ed.), A practical guide to lexicography (pp. 297–311). Amsterdam: John Benjamins. doi:10.1075/tlrp.6.33ver.
