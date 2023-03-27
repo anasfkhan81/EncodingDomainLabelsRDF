@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-model href="https://raw.githubusercontent.com/DARIAH-ERIC/lexicalresources/master/Schemas/TEILex0/out/TEILex0.rng" 
+    type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" 
+    type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="MORAIS.1.DLP">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="full" xml:lang="en">Morais Dictionary (1st ed., 1789): digital edition</title>
+         </titleStmt>
+         <editionStmt>  
+            <edition>XML edition using GroBID-dictionaries</edition>
+         </editionStmt>  
+         <!-- [...] -->
+         <publicationStmt>
+            <publisher>NOVA CLUNL</publisher>
+            <authority role="sponsor">FCT – Fundação para a Ciência e Tecnologia</authority>
+            <pubPlace>Lisboa</pubPlace>
+            <date>2021-2024</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Creative Commons Attribution 4.0 International (CC BY 4.0)
+               </licence>
+            </availability>
+         </publicationStmt>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <!-- In progress. -->
+            <p>Prepared within MorDigital Project (PTDC/LLT-LIN/6841/2020).</p>
+            <p>We already had access to OCR’ed versions of the dictionary editions at the beginning
+               of the project. These files needed to be post-corrected. For this, we decided to use
+               ABBYY FineReader.</p>
+         </projectDesc>
+         <editorialDecl>
+            <!-- In progress. -->
+            <p>Original spelling and typography is retained. Errors found in original OCR were all corrected.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language role="objectLanguage" ident="pt">Portuguese</language>
+            <language role="workingLanguage" ident="pt">Portuguese</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <entry xmlns="http://www.tei-c.org/ns/1.0" xml:id="MORAIS.1.DLP.AXE" type="mainEntry" xml:lang="pt">
+            <form type="lemma">
+               <orth>AXE</orth>
+            </form>
+            <metamark function="lemmaDelimiter">,</metamark>
+            <gramGrp>
+               <gram type="pos" norm="NOUN">ſ.</gram>
+               <gram type="gen">m.</gram>
+            </gramGrp>
+            <sense xml:id="MORAIS.1.DLP.APOGEU.s.1">
+               <usg type="socioCultural">ch.</usg>
+               <def>feridinha, borbulhinha</def>
+            </sense>
+            <pc>.</pc>
+            <metamark function="senseDelimiter">§</metamark>
+            <sense xml:id="ORAIS.1.DLP.APOGEU.s.2">
+               <gloss>Axe</gloss>
+            <usg type="domain">t. Geograf.</usg>
+            <def>eixo</def>
+               <cit type="example" xml:lang="pt">
+               <bibl type="attestation" source="#x">
+                  <author>C.</author>
+                  <title>Eleg.</title>
+                  <title>O Poeta Simonides</title>
+                  <pc>.</pc>
+                  </bibl>
+                     <quote>Dando do segundo axe certa prova</quote>
+                     <metamark function="quotationDelimiter">,</metamark>
+                        <lbl><hi>e</hi></lbl>
+                  <bibl type="attestation" source="#x">
+                  <title type="abbr">Luſ.</title>
+                  <pc>.</pc>
+               <citedRange unit="canto">10.</citedRange>
+                  <citedRange unit="verse">87.</citedRange>
+                  <pc>.</pc>
+                     </bibl>
+               </cit>
+            </sense>
+         </entry>
+      </body>
+   </text>
+</TEI>
