@@ -11,7 +11,7 @@
     lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm [ ontolex:phoneticRep "triˈvɛlɐ"@pt ;
             ontolex:writtenRep "trivela"@pt ] ;
-    ontolex:sense [ lexinfo:domain [ rdf:value "" ] ;
+    ontolex:sense [ lexinfo:domain <http://example.org/class/football> ;
             rdfs:comment """https://www.youtube.com/watch?v=3yCL8vpmX18&t=49s&ab_channel=Canal11>
         """ ;
             skos:definition """técnica de passe, remate ou cruzamento em que se chuta a bola com a parte exterior do
