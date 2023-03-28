@@ -9,5 +9,6 @@
     ontolex:canonicalForm [ ontolex:writtenRep "CITERIOR"@pt ] ;
     lexinfo:partOfSpeech lexinfo:adjective ; 
     ontolex:sense [ skos:definition "que fica áquem de algum poſto, ou ſitio"@pt ;
-            lexicog:usageExample [ dcterms:source "  M. Luſ. ,, usa-se na t. Geograf. Hespanha citerior, e ulterior . " ] ] .
+            lexicog:usageExample [ dcterms:source "  M. Luſ. ,, usa-se na t. Geograf. Hespanha citerior, e ulterior . "; 
+                                   dcterms:subject  <http://example.org/class/geografia>] ] .
 
