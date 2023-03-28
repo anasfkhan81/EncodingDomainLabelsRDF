@@ -16,7 +16,7 @@
         [ 
             lexinfo:domain <http://example.org/class/geografia> ;
             skos:definition "eixo"@pt ;
-            lexicog:usageExample [ dcterms:source "C. Eleg. O Poeta Simonides . ",
+            lexicog:usageExample [ dcterms:source "C. Eleg. O Poeta Simonides . ";
                    rdf:value "Dando do segundo axe certa prova"@pt ]; 
             lexicog:usageExample [ dcterms:source "Luſ. . 10. 87. . "]
         ] .
