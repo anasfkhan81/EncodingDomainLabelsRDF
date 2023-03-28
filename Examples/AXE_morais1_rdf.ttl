@@ -7,7 +7,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix tei: <http://www.tei-c.org/ns/1.0> .
 
-<file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/AXE_morais1_rdf.xml#MORAIS.1.DLP.AXE> a ontolex:LexicalEntry ;
+<http://example.org/individual/MORAIS.1.DLP.AXE> a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ; 
     ontolex:canonicalForm [ ontolex:writtenRep "AXE"@pt ] ;
