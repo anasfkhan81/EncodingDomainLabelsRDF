@@ -6,6 +6,7 @@
 <http://example.org/class/DLP_cristalografia> a ontolex:LexicalEntry ;
     lexinfo:etymology [ rdf:value "Do grego κρύσταλλος cristal + sufixo -grafia"@pt ] ;
     lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ; 
     ontolex:canonicalForm [ 
                             ontolex:phoneticRep "kriʃtɐluɡrɐˈfiɐ"@pt ;
                             ontolex:writtenRep "cristalografia"@pt 
