@@ -1,5 +1,5 @@
 # Guidelines for Encoding Domain Labels in RDF Using in OntoLex and SKOS
-###  Fahad Khan, Ana Salgado, Rute Costa, Bruno Almeida, Sara Carvalho , Margarida Ramos and Raquel Silva
+###  Fahad Khan, Ana Salgado, Rute Costa, Margarida Ramos, Bruno Almeida, Sara Carvalho and Raquel Silva
 
 - [Guidelines for Encoding Domain Labels in RDF Using in OntoLex](#guidelines-for-encoding-domain-labels-in-rdf-using-in-ontolex)
   * [Domain Labels - An Introduction](#domain-labels---an-introduction)
