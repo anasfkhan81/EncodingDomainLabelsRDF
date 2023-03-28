@@ -5,7 +5,6 @@
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tei: <http://www.tei-c.org/ns/1.0> .
 
 <http://example.org/individual/MORAIS.1.DLP.AXE> a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:masculine ;
