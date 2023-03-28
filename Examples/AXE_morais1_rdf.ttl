@@ -1,7 +1,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix lexicog: <http://www.w3.org/ns/lemon/lexicog#> .
 @prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
-@prefix ns1: <file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
