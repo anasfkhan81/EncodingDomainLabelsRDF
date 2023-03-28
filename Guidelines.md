@@ -43,17 +43,19 @@ In addition they mention the ```ontolex:usage``` property which is defined as in
 This property has the domain of ```ontolex:LexicalSense``` and the range ```rdfs:Resource```. In the lexinfo vocabulary we have subproperties of ```ontolex:usage```, including ```lexinfo:domain``` which is defined as a: 
 >usage marker which identifies the specialized field of knowledge in which a lexical unit is mainly used.
 
-Ontolex therefore offers us a way of marking a lexical entry as belonging to a certain domain (this is useful in case a term is only used in a technical sense) and a way of specifying that a specific sense of an entry is associated with a particular domain. We recommend encoding the domain label as a SKOS ```concept``` and using the ```skos:narrower``` and ```skos:broader``` relations to encode the relations between different domains. 
+Ontolex therefore offers us a way of marking a lexical entry as belonging to a certain domain (this is useful in case a term is only used in a technical sense) and a way of specifying that a specific sense of an entry is associated with a particular domain. We recommend encoding the domain label as a SKOS ```Concept``` and using the ```skos:narrower``` and ```skos:broader``` relations to encode the relations between different domains. 
 
 We therefore recommend the following steps when encoding domain label information in lexical resources:
 
-1. In the case the 
-2. James Monroe
-3. John Quincy Adams
+1. Domain labels should be encoded as individuals of ```skos:Concept```. Hierarchical relationships between domain should be encoded using the ```skos:narrower``` and ```skos:broader```. 
+2. In the case the whole entry is marked as (or interpreted by the encoder as) belonging to a domain we recommend using ```dct:subject``` with the entry as subject and the relevant ```skos:Concept``` as object. See examples ...
+3. In the case a single sense is marked as (or interpreted by the encoder as) belonging to a domain we recommend using ```lexinfo:domain``` with the entry as subject and the relevant ```skos:Concept``` as object. See examples ...
 
-In the following examples we will look at how to encode several different kinds of examples of domain labels, trying to capture several different varieties of use case:
 
-<!--- When the meaning specified refers to a specific technical sense of a word belonging to a domain **we recommend using the ```ontolex:LexicalConcept``` class** --->
+
+<!--- In the following examples we will look at how to encode several different kinds of examples of domain labels, trying to capture several different varieties of use case:
+When the meaning specified refers to a specific technical sense of a word belonging to a domain **we recommend using the ```ontolex:LexicalConcept``` class** --->
+## Examples
 ### Encoding hierarchical domain labels: _Cristalografia_
 
 In the first example we show how to encode an entry which has a sense that has been marked with a domain label. In this case the entry is for the Portuguese word _cristalografia_ 'crystallography' from the Portuguese Academy Dictionary which as the following diagram shows has one sense and this sense is marked with the label MINERALOGIA referring to the domain of mineralogy. 
