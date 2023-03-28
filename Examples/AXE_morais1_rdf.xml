@@ -1,0 +1,17 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://lari-datasets.ilc.cnr.it/nenu_sample#" xmlns:void="http://rdfs.org/ns/void#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:ns="http://creativecommons.org/ns#" xmlns:lime="http://www.w3.org/ns/lemon/lime" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:lexinfo="http://www.lexinfo.net/ontology/3.0/lexinfo#" xmlns:lexicog="http://www.w3.org/ns/lemon/lexicog#" xmlns:dct="http://purl.org/dc/terms/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:terms="http://purl.org/dc/terms/" xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:lime1="http://www.w3.org/ns/lemon/lime#" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <ontolex:LexicalEntry rdf:ID="MORAIS.1.DLP.AXE">
+            <ontolex:canonicalForm><rdf:Description><ontolex:writtenRep xml:lang="pt">AXE</ontolex:writtenRep></rdf:Description></ontolex:canonicalForm>
+            <metamark xmlns="http://www.tei-c.org/ns/1.0" function="lemmaDelimiter">,</metamark>
+            <lexinfo:gender rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#masculine"/>
+            <ontolex:sense><rdf:Description><lexinfo:socioCultural><rdf:Description><rdf:value>ch.</rdf:value></rdf:Description></lexinfo:socioCultural><skos:definition xml:lang="pt">feridinha, borbulhinha</skos:definition></rdf:Description></ontolex:sense>
+            
+            <metamark xmlns="http://www.tei-c.org/ns/1.0" function="senseDelimiter">&#167;</metamark>
+            <ontolex:sense><rdf:Description><gloss xmlns="http://www.tei-c.org/ns/1.0">Axe</gloss><lexinfo:domain><rdf:Description><rdf:value>t. Geograf.</rdf:value></rdf:Description></lexinfo:domain><skos:definition xml:lang="pt">eixo</skos:definition><lexicog:usageExample><rdf:Description>
+               <dct:source> C. Eleg. O Poeta Simonides . </dct:source>
+                     <rdf:value xml:lang="pt">Dando do segundo axe certa prova</rdf:value>
+                     <metamark xmlns="http://www.tei-c.org/ns/1.0" function="quotationDelimiter">,</metamark>
+                        <lbl xmlns="http://www.tei-c.org/ns/1.0">e</lbl>
+                  <dct:source> Lu&#383;. . 10. 87. . </dct:source>
+               </rdf:Description></lexicog:usageExample></rdf:Description></ontolex:sense>
+         </ontolex:LexicalEntry>
+</rdf:RDF>

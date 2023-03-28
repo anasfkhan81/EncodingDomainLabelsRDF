@@ -1,0 +1,25 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lexicog: <http://www.w3.org/ns/lemon/lexicog#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix ns1: <file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tei: <http://www.tei-c.org/ns/1.0> .
+
+<file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/AXE_morais1_rdf.xml#MORAIS.1.DLP.AXE> a ontolex:LexicalEntry ;
+    lexinfo:gender lexinfo:masculine ;
+    tei:metamark [ ns1:function "lemmaDelimiter" ],
+        [ ns1:function "senseDelimiter" ] ;
+    ontolex:canonicalForm [ ontolex:writtenRep "AXE"@pt ] ;
+    ontolex:sense [ lexinfo:socioCultural [ rdf:value "ch." ] ;
+            skos:definition "feridinha, borbulhinha"@pt ],
+        [ lexinfo:domain [ rdf:value "t. Geograf." ] ;
+            tei:gloss "Axe" ;
+            skos:definition "eixo"@pt ;
+            lexicog:usageExample [ dcterms:source " C. Eleg. O Poeta Simonides . ",
+                        " Luſ. . 10. 87. . " ;
+                    tei:lbl "e" ;
+                    tei:metamark [ ns1:function "quotationDelimiter" ] ;
+                    rdf:value "Dando do segundo axe certa prova"@pt ] ] .
+
