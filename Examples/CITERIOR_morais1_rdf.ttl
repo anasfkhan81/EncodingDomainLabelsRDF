@@ -3,7 +3,6 @@
 @prefix ns1: <file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tei: <http://www.tei-c.org/ns/1.0> .
 
 <file:///Users/fahadkhan/Documents/GitHub/EncodingDomainLabelsRDF/Examples/CITERIOR_morais1_rdf.xml#MORAIS.1.DLP.CITERIOR> a ontolex:LexicalEntry ;
     ontolex:canonicalForm [ ontolex:writtenRep "CITERIOR"@pt ] ;
