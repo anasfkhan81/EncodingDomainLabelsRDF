@@ -1,4 +1,4 @@
-# Guidelines for Encoding Domain Labels in RDF Using in OntoLex and SKOS
+# Guidelines for Encoding Domain Labels in for Linked Data Lexical Resources in RDF
 ###  Fahad Khan, Ana Salgado, Rute Costa, Margarida Ramos, Bruno Almeida, Sara Carvalho and Raquel Silva
 
 - [Guidelines for Encoding Domain Labels in RDF Using in OntoLex](#guidelines-for-encoding-domain-labels-in-rdf-using-in-ontolex)
@@ -12,7 +12,9 @@
 
 ## Domain Labels - An Introduction
 
-Domain labels are tags associated with individual lexicographic articles or senses in a dictionary or similar lexicographic resource which indicate that a lexical unit or a specific sense belongs to a specialised domain, e.g., Sport or Medicine. Dictionary domain labels can be organised in terms of taxonomies or thesauri, something which makes the original resource easier to navigate and to integrate with other datasets. Such labels play an important role in many lexicographic resources but there hasn’t been much work on modelling these in linked data in a way that better exploits the possibilities of the Semantic Web stack. 
+Domain labels are tags associated with individual entries, senses or other components of an entry in a lexical resource which indicate that a given entry, sense (or other linguistic phenonenon) belongs to a specialised domain. They have a long history within traditional lexicography and are a common occurrence in most dictionaries. Domain labels can be organised in taxonomies or thesauri, something which helps to make lexical information easier to navigate. Although such labels play an important role in lexical resources, and especially in lexicographic resources, there hasn’t been much work on modelling these as in linked data lexicons in a way that better exploits the possibilities of the Semantic Web stack (although see (Almeida et. al, 2022). 
+
+In the rest of this document, after a brief introduction to the topic in the next section where we clarify further what we mean by domain labels, we will present a series of guidelines for how to encode domain label information in RDF using three linked data vocabularies, namely OntoLex-Lemon, SKOS, and Lexicog. These will be illustrated by a 
 
 ### Background
 
@@ -157,6 +159,7 @@ Nexus Linguarum and MorDigital
 
 ## References
 
+Almeida, B., Costa, R., Salgado, A., Ramos, M., Romary, L., Khan, F., ... & Tasovac, T. (2022). Modelling Usage Information in a Legacy Dictionary: From TEI Lex-0 to Ontolex-Lemon.
 
 Svensén, B. (2009). A Handbook of Lexicography: The Theory and Practice of Dictionary Making. Cambridge: Cambridge University Press.
 
