@@ -98,7 +98,7 @@ Some additional information relevant for our example is that the domain of MINER
           skos:broader <http://example.org/class/mineralogia> .
 
 
-The entry itself
+In the entry itself we link the (single) sense of the entry for _cristalografia_ (note that the sense is a blank node in the current example) to the domain ```<http://example.org/class/mineralogia>``` via the ```lexinfo:domain``` property.
 
       <http://example.org/class/DLP_cristalografia> a ontolex:LexicalEntry ;
        lexinfo:etymology [ rdf:value "Do grego κρύσταλλος cristal + sufixo -grafia"@pt ] ;
@@ -117,6 +117,8 @@ The entry itself
 
 
 ### Encoding hierarchical domain labels in the _Morais_ dictionary
+In the following example we 
+
 
 ![Axe Example](https://github.com/anasfkhan81/EncodingDomainLabelsRDF/blob/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/AXE_morais1.png)
 
