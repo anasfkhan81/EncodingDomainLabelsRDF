@@ -123,7 +123,14 @@ Our second example is derived from the encoding of a retrodigitised dictionary, 
 
 ![Citerior Example](https://github.com/anasfkhan81/EncodingDomainLabelsRDF/blob/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/CITERIOR_morais1.png)
 
-Both of these entries include a domain label pertaining to the domain of geography. In the first entry this is referred to as "t. Geograf." in the second example 
+Both of these entries include a domain label pertaining to the domain of geography. In the first entry this is referred to as "t. Geograf." in the second example "Geograf." We encode this domain label as follows:
+
+
+      <http://example.org/class/geografia> rdf:type  skos:Concept ; 
+          skos:prefLabel "t. Geograf."@pt;
+          skos:altLabel "Geograf."@pt. 
+
+The entry for _axe_ We can then encode the first entry as follows. 
 
 
       <http://example.org/individual/MORAIS.1.DLP.AXE> a ontolex:LexicalEntry ;
@@ -142,10 +149,8 @@ Both of these entries include a domain label pertaining to the domain of geograp
                           lexicog:usageExample [ dcterms:source "Luſ. . 10. 87. . "]
                           ] .
 
-      <http://example.org/class/geografia> rdf:type  skos:Concept ; 
-          skos:prefLabel "geografia"@pt;
-          skos:prefLabel "geography"@en; 
-          skos:altLabel "t. Geograf."@pt. 
+Note that the entry has two different senses, one of which has a 
+
 
 ## Acknolwedgements
 Nexus Linguarum and MorDigital
