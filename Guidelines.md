@@ -149,7 +149,7 @@ The entry for _axe_ We can then encode the first entry as follows.
                           lexicog:usageExample [ dcterms:source "Luſ. . 10. 87. . "]
                           ] .
 
-Note that the entry has two different senses, one of which has a 
+Note that the entry has two different senses.
 
 
 ## Acknolwedgements
