@@ -59,6 +59,18 @@ We therefore recommend the following steps when encoding domain label informatio
 <!--- In the following examples we will look at how to encode several different kinds of examples of domain labels, trying to capture several different varieties of use case:
 When the meaning specified refers to a specific technical sense of a word belonging to a domain **we recommend using the ```ontolex:LexicalConcept``` class** --->
 ## Examples
+
+### Namespaces
+In the examples that follow we use the following namespaces:
+
+      @prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+      @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+      @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+      @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+      @prefix dcterms: <http://purl.org/dc/terms/> .
+      @prefix lexicog: <http://www.w3.org/ns/lemon/lexicog#> .
+      
+
 ### Encoding hierarchical domain labels in the _Dicionário da Academia de Ciências_
 
 In the first example we show how to encode an entry which has a sense that has been marked with a domain label. In this case the entry is for the Portuguese word _cristalografia_ 'crystallography' from the Portuguese Academy Dictionary which as the following diagram shows has one sense and this sense is marked with the label MINERALOGIA referring to the domain of mineralogy. 
@@ -69,10 +81,7 @@ In the first example we show how to encode an entry which has a sense that has b
 
 Some additional information which is relevant for our example is that the domain of MINERALOGIA in the Portuguese Academy Dictionary subject hierarchy is a subdomain of GEOLOGIA 'geology' which is in turn a subdomain of CIENCAS DA TERRA 'earth sciences'.  We can represent the entry as follows in RDF using the following vocabularies: OntoLex-Lemon, lexinfo, and SKOS.
 
-      @prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
-      @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
-      @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-      @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
 
       <http://example.org/class/DLP_cristalografia> a ontolex:LexicalEntry ;
           lexinfo:etymology [ rdf:value "Do grego κρύσταλλος cristal + sufixo -grafia"@pt ] ;
@@ -109,12 +118,7 @@ Some additional information which is relevant for our example is that the domain
 ![Citerior Example](https://github.com/anasfkhan81/EncodingDomainLabelsRDF/blob/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/CITERIOR_morais1.png)
 
 
-      @prefix dcterms: <http://purl.org/dc/terms/> .
-      @prefix lexicog: <http://www.w3.org/ns/lemon/lexicog#> .
-      @prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
-      @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
-      @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-      @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
 
       <http://example.org/individual/MORAIS.1.DLP.AXE> a ontolex:LexicalEntry ;
           lexinfo:gender lexinfo:masculine ;
@@ -136,6 +140,9 @@ Some additional information which is relevant for our example is that the domain
           skos:prefLabel "geografia"@pt;
           skos:prefLabel "geography"@en; 
           skos:altLabel "t. Geograf."@pt. 
+
+## Acknolwedgements
+Nexus Linguarum and MorDigital
 
 ## References
 
