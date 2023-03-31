@@ -117,8 +117,7 @@ In the entry itself we link the (single) sense of the entry for _cristalografia_
 
 
 ### Encoding hierarchical domain labels in the _Morais_ dictionary
-In the following example we 
-
+Our second example is derived from the encoding of a retrodigitised dictionary, Morais,  in which we have the use of variants for the same domain label. We will look at two entries in what follows. The first is the entry for the polysemic word _axe_ 'pimple, axle' and the second is the entry for _citerior_  'on the near side of something' 
 
 ![Axe Example](https://github.com/anasfkhan81/EncodingDomainLabelsRDF/blob/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/AXE_morais1.png)
 
