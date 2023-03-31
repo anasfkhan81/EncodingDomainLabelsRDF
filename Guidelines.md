@@ -51,10 +51,10 @@ When it comes to encoding the domain label itself, we suggest encoding it as a i
 
 We therefore recommend the following steps when encoding domain label information in lexical resources:
 
-1. Domain labels should be encoded as individuals of ```skos:Concept```. Hierarchical relationships between domain should be encoded using the ```skos:narrower``` and ```skos:broader```. Dictionaries may not consistently encode the same domain label using the same string, in this case we recommend using ```skos:preflabel``` and ```skos:altlabel```.
-2. In the case the whole entry is marked as (or interpreted by the encoder as) belonging to a domain we recommend using ```dct:subject``` with the entry as subject and the relevant domain label (encoded as ```skos:Concept``` see above) as object. See examples ...
-3. In the case a single sense is marked as (or interpreted by the encoder as) belonging to a domain we recommend using ```lexinfo:domain``` with the entry as subject and the relevant ```skos:Concept``` as object. See examples ...
-
+1. Domain labels themselves should be encoded as individuals of the class ```skos:Concept```. Hierarchical relationships between domain should be encoded using the ```skos:narrower``` and ```skos:broader```. In the case of retrodigitised and non-native born dictionaries, it be that the same domain label is not consistently encoded with the same string, in such situations we recommend using ```skos:preflabel``` and ```skos:altlabel``` to list the different versions of the same label (with the former being used to encode the version which is found in the front matter and the latter its variants).
+2. In case the whole entry is marked as (or interpreted by the encoder as) belonging to a domain we recommend using ```dct:subject``` with the entry as subject and the relevant domain label (encoded as ```skos:Concept```, see above) as object. See examples ... 
+3. In case a single sense is marked as (or is interpreted as) belonging to a domain we recommend using ```lexinfo:domain``` with the entry as subject and the relevant ```skos:Concept``` as object. See examples ...
+4. In other cases 
 
 
 <!--- In the following examples we will look at how to encode several different kinds of examples of domain labels, trying to capture several different varieties of use case:
