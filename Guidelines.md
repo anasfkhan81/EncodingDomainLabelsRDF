@@ -81,26 +81,10 @@ In the first example we show how to encode an entry which has a sense that has b
 
 Some additional information which is relevant for our example is that the domain of MINERALOGIA in the Portuguese Academy Dictionary subject hierarchy is a subdomain of GEOLOGIA 'geology' which is in turn a subdomain of CIENCAS DA TERRA 'earth sciences'.  We can represent the entry as follows in RDF using the following vocabularies: OntoLex-Lemon, lexinfo, and SKOS.
 
-
-
-      <http://example.org/class/DLP_cristalografia> a ontolex:LexicalEntry ;
-          lexinfo:etymology [ rdf:value "Do grego κρύσταλλος cristal + sufixo -grafia"@pt ] ;
-          lexinfo:gender lexinfo:feminine ;
-          ontolex:canonicalForm [ 
-                                  ontolex:phoneticRep "kriʃtɐluɡrɐˈfiɐ"@pt ;
-                                  ontolex:writtenRep "cristalografia"@pt 
-                                  ] ;
-          ontolex:sense [ lexinfo:domain <http://example.org/class/mineralogia>;
-                  skos:definition """ciência que estuda os cristais, considerando aspetos tais como o seu crescimento, a
-                  estrutura interna e as propriedades físicas decorrentes da regularidade dessa estrutura,
-                  em particular, as formas que apresentam, cuja simetria utiliza como método de
-                  classificação e de descrição"""@pt ] .
-
-
       <http://example.org/class/mineralogia> rdf:type  skos:Concept; 
-          skos:prefLabel "mineralogia"@pt;
-          skos:prefLabel "minerology"@en; 
-          skos:narrower <http://example.org/class/geologia> .
+        skos:prefLabel "mineralogia"@pt;
+        skos:prefLabel "minerology"@en; 
+        skos:narrower <http://example.org/class/geologia> .
       <http://example.org/class/geologia> rdf:type  skos:Concept; 
           skos:prefLabel "geologia"@pt;
           skos:prefLabel "geology"@en; 
@@ -110,6 +94,25 @@ Some additional information which is relevant for our example is that the domain
           skos:prefLabel "ciencias da terra"@pt;
           skos:prefLabel "earth sciences"@en; 
           skos:broader <http://example.org/class/mineralogia> .
+
+
+The entry itself
+
+      <http://example.org/class/DLP_cristalografia> a ontolex:LexicalEntry ;
+       lexinfo:etymology [ rdf:value "Do grego κρύσταλλος cristal + sufixo -grafia"@pt ] ;
+       lexinfo:gender lexinfo:feminine ;
+       lexinfo:partOfSpeech lexinfo:noun ; 
+        ontolex:canonicalForm [ 
+                            ontolex:phoneticRep "kriʃtɐluɡrɐˈfiɐ"@pt ;
+                            ontolex:writtenRep "cristalografia"@pt 
+                            ] ;
+         ontolex:sense [ lexinfo:domain <http://example.org/class/mineralogia>;
+                           skos:definition """ciência que estuda os cristais, considerando aspetos tais como o seu crescimento, a
+                           estrutura interna e as propriedades físicas decorrentes da regularidade dessa estrutura,
+                           em particular, as formas que apresentam, cuja simetria utiliza como método de
+                           classificação e de descrição"""@pt ] .
+
+
 
 ### Encoding hierarchical domain labels in the _Morais_ dictionary
 
