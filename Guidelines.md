@@ -104,7 +104,41 @@ Some additional information which is relevant for our example is that the domain
 
 ### Encoding hierarchical domain labels in the _Morais_ dictionary
 
+![Axe Example](https://github.com/anasfkhan81/EncodingDomainLabelsRDF/blob/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/AXE_morais1.png)
+
+![Citerior Example](https://github.com/anasfkhan81/EncodingDomainLabelsRDF/blob/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/CITERIOR_morais1.png)
+
+
+      @prefix dcterms: <http://purl.org/dc/terms/> .
+      @prefix lexicog: <http://www.w3.org/ns/lemon/lexicog#> .
+      @prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+      @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+      @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+      @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+      <http://example.org/individual/MORAIS.1.DLP.AXE> a ontolex:LexicalEntry ;
+          lexinfo:gender lexinfo:masculine ;
+          lexinfo:partOfSpeech lexinfo:noun ; 
+          ontolex:canonicalForm [ ontolex:writtenRep "AXE"@pt ] ;
+          ontolex:sense [ 
+                          lexinfo:socioCultural [ rdf:value "ch." ] ;
+                          skos:definition "feridinha, borbulhinha"@pt 
+                         ],
+                         [ 
+                          lexinfo:domain <http://example.org/class/geografia> ;
+                          skos:definition "eixo"@pt ;
+                          lexicog:usageExample [ dcterms:source "C. Eleg. O Poeta Simonides . ";
+                              rdf:value "Dando do segundo axe certa prova"@pt ]; 
+                          lexicog:usageExample [ dcterms:source "Luſ. . 10. 87. . "]
+                          ] .
+
+      <http://example.org/class/geografia> rdf:type  skos:Concept ; 
+          skos:prefLabel "geografia"@pt;
+          skos:prefLabel "geography"@en; 
+          skos:altLabel "t. Geograf."@pt. 
+
 ## References
+
 
 Svensén, B. (2009). A Handbook of Lexicography: The Theory and Practice of Dictionary Making. Cambridge: Cambridge University Press.
 
