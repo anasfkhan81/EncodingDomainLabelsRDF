@@ -28,8 +28,7 @@ Meanwhile, we must recognise that, in general dictionaries, the usage of domain 
 Assuming that the unmarked lexicon belongs to the general lexicon, as we shall see, is a controversial matter. In fact, not every lexical unit that can be considered a term is marked. It is unclear if this is due to forgetfulness or if the lexicographer decided to apply different criteria. In most cases, we can only limit ourselves to making assumptions, given the lack of introductory and explanatory texts in the dictionary on the methodology and criteria that have been followed. On the other hand, by comparing different lexicographic resources, we identify imbalanced criteria for selecting domains. The coexistence of generic domains with smaller spectrum domains is one of the problems.
 
 ### Examples
-In what follows we will take our examples from the Portuguese Academy Dictionary and ....
-
+In what follows we will take our examples from the Dicionário da Academia de Ciências.
 ## Using OntoLex and SKOS for Encoding Domain Labels 
 ### Requirements
 In what follows we will assume a basic knowledge of the [OntoLex-Lemon vocabulary](https://www.w3.org/2016/05/ontolex/), its extension dealing with lexicographic resources the [OntoLex-Lemon Lexicography Module (Lexicog)](https://www.w3.org/2019/09/lexicog/), and the [Lexinfo vocabulary](https://lexinfo.net/) which allows for the addition of more specific linguistic information to RDF vocabularies (specifying for instance part of speech information). In addition, will also assume some familiarity with the [SKOS vocabulary](https://www.w3.org/TR/swbp-skos-core-spec/). 
@@ -60,7 +59,7 @@ We therefore recommend the following steps when encoding domain label informatio
 <!--- In the following examples we will look at how to encode several different kinds of examples of domain labels, trying to capture several different varieties of use case:
 When the meaning specified refers to a specific technical sense of a word belonging to a domain **we recommend using the ```ontolex:LexicalConcept``` class** --->
 ## Examples
-### Encoding hierarchical domain labels: _Cristalografia_
+### Encoding hierarchical domain labels in the _Dicionário da Academia de Ciências_
 
 In the first example we show how to encode an entry which has a sense that has been marked with a domain label. In this case the entry is for the Portuguese word _cristalografia_ 'crystallography' from the Portuguese Academy Dictionary which as the following diagram shows has one sense and this sense is marked with the label MINERALOGIA referring to the domain of mineralogy. 
 
@@ -102,6 +101,8 @@ Some additional information which is relevant for our example is that the domain
           skos:prefLabel "ciencias da terra"@pt;
           skos:prefLabel "earth sciences"@en; 
           skos:broader <http://example.org/class/mineralogia> .
+
+### Encoding hierarchical domain labels in the _Morais_ dictionary
 
 ## References
 
