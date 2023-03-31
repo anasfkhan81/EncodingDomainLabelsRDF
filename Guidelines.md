@@ -44,16 +44,18 @@ This property has the domain of ```ontolex:LexicalSense``` and the range ```rdfs
 
 [^1]: Here and throughout this document when we mention lexinfo we are referring to [lexinfo 3.0](https://lexinfo.net/ontology/3.0/lexinfo).
 
-Ontolex therefore offers us a way of marking a lexical entry as belonging to a certain domain (this is useful in case a term is only used in a technical sense) and a way of specifying that a specific sense of an entry is associated with a particular domain. 
+Ontolex therefore offers us a way of marking a lexical entry as belonging to a certain domain (this is useful in case a term is only used in a technical sense) and a way of specifying that a specific sense of an entry is associated with a particular domain.  When it comes to encoding the domain label itself, we suggest encoding it as a instance of the SKOS class ```Concept``` and using the ```skos:narrower``` and ```skos:broader``` relations to encode the relations between different domains. 
 
-When it comes to encoding the domain label itself, we suggest encoding it as a instance of the SKOS class ```Concept``` and using the ```skos:narrower``` and ```skos:broader``` relations to encode the relations between different domains. 
+---
+**SUMMARY OF RECOMMENDATIONS** 
 
-We therefore recommend the following steps when encoding domain label information in lexical resources:
+We recommend the following steps when encoding domain label information in lexical resources:
 
 1. Domain labels themselves should be encoded as individuals of the class ```skos:Concept```. Hierarchical relationships between domain should be encoded using the ```skos:narrower``` and ```skos:broader```. In the case of retrodigitised and non-native born dictionaries, it be that the same domain label is not consistently encoded with the same string, in such situations we recommend using ```skos:preflabel``` and ```skos:altlabel``` to list the different versions of the same label (with the former being used to encode the version which is found in the front matter and the latter its variants).
 2. In case the whole entry is marked as (or interpreted by the encoder as) belonging to a domain we recommend using ```dct:subject``` with the entry as subject and the relevant domain label (encoded as ```skos:Concept```, see above) as object. See examples ... 
 3. In case a single sense is marked as (or is interpreted as) belonging to a domain we recommend using ```lexinfo:domain``` with the entry as subject and the relevant ```skos:Concept``` as object. See examples ...
 4. In other cases where any other part of the entry is marked with a domain label, once again we recommend the use of ```dct:subject```.
+---
 
 
 <!--- In the following examples we will look at how to encode several different kinds of examples of domain labels, trying to capture several different varieties of use case:
@@ -73,13 +75,13 @@ In the examples that follow we use the following namespaces:
 
 ### Encoding hierarchical domain labels in the _Dicionário da Academia de Ciências_
 
-In the first example we show how to encode an entry which has a sense that has been marked with a domain label. In this case the entry is for the Portuguese word _cristalografia_ 'crystallography' from the Portuguese Academy Dictionary which as the following diagram shows has one sense and this sense is marked with the label MINERALOGIA referring to the domain of mineralogy. 
+In the first example we show how to encode an entry which has a sense that has been marked with a domain label and where the domain referred to is part of a hierarchy of domains. In this case the entry is for the Portuguese word _cristalografia_ 'crystallography' from the _Dicionário da Academia de Ciências_. As the following diagram shows this entry has one sense which is marked with the label MINERALOGIA referring to the domain of mineralogy. 
 
 ![Cristalografia Example![cristalografia_DLP](https://user-images.githubusercontent.com/45368069/227588665-33146354-1dd5-4497-9594-f5c1567008e9.png)
 ](Examples/cristalografia_DLP.png "Cristalografia Example")
 <!--![Cristalografia Example](Examples/cristalografia_DLP.png "Cristalografia Example")-->
 
-Some additional information which is relevant for our example is that the domain of MINERALOGIA in the Portuguese Academy Dictionary subject hierarchy is a subdomain of GEOLOGIA 'geology' which is in turn a subdomain of CIENCAS DA TERRA 'earth sciences'.  We can represent the entry as follows in RDF using the following vocabularies: OntoLex-Lemon, lexinfo, and SKOS.
+Some additional information relevant for our example is that the domain of MINERALOGIA is a subdomain of GEOLOGIA 'geology'  in the _Dicionário da Academia de Ciências_ subject hierarchy and this is in turn a subdomain of CIENCAS DA TERRA 'earth sciences'.   We can use represent these domains and their interrelations as follows using the SKOS vocabulary:
 
       <http://example.org/class/mineralogia> rdf:type  skos:Concept; 
         skos:prefLabel "mineralogia"@pt;
