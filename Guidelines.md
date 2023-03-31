@@ -81,7 +81,7 @@ In the first example we show how to encode an entry which has a sense that has b
 ](Examples/cristalografia_DLP.png "Cristalografia Example")
 <!--![Cristalografia Example](Examples/cristalografia_DLP.png "Cristalografia Example")-->
 
-Some additional information relevant for our example is that the domain of MINERALOGIA is a subdomain of GEOLOGIA 'geology'  in the _Dicionário da Academia de Ciências_ subject hierarchy and this is in turn a subdomain of CIENCAS DA TERRA 'earth sciences'.   We can use represent these domains and their interrelations as follows using the SKOS vocabulary:
+Some additional information relevant for our example is that the domain of MINERALOGIA is a subdomain of GEOLOGIA 'geology'  in the _Dicionário da Academia de Ciências_ subject hierarchy and this is in turn a subdomain of CIENCAS DA TERRA 'earth sciences'.   We can represent these domains and their interrelations as follows using the SKOS vocabulary:
 
       <http://example.org/class/mineralogia> rdf:type  skos:Concept; 
         skos:prefLabel "mineralogia"@pt;
@@ -123,7 +123,7 @@ Our second example is derived from the encoding of a retrodigitised dictionary, 
 
 ![Citerior Example](https://github.com/anasfkhan81/EncodingDomainLabelsRDF/blob/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/CITERIOR_morais1.png)
 
-
+Both of these entries include a domain label pertaining to the domain of geography. In the first entry this is referred to as "t. Geograf." in the second example 
 
 
       <http://example.org/individual/MORAIS.1.DLP.AXE> a ontolex:LexicalEntry ;
