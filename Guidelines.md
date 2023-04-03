@@ -162,6 +162,17 @@ Moving onto the entry for _axe_, we can encode it as follows:
 Note that the entry has two different senses (both of these blank nodes)[^5]. The second sense is the relevant one in our case; note also the two usage examples associated with the sense. Once again we use the ```lexinfo:domain```[^6]. 
 
 
+
+<http://example.org/instance/MORAIS.1.DLP.CITERIOR> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ ontolex:writtenRep "CITERIOR"@pt ] ;
+    lexinfo:partOfSpeech lexinfo:adjective ; 
+    ontolex:sense [ 
+                    skos:definition "que fica áquem de algum poſto, ou ſitio"@pt ;
+                    lexicog:usageExample [ 
+                                dcterms:source "  M. Luſ. ,, usa-se na t. Geograf. Hespanha citerior, e ulterior . "; 
+                                dcterms:subject  <http://example.org/class/geografia>] ] .
+
+
 [^5]: We can order these two senses using the ```lexicog:LexicographicComponent```class, see [the lexicog guidelines](https://www.w3.org/2019/09/lexicog/#example4). We decided not to do this in the current case in the interests of keeping the exposition as simple as possible. 
 [^6]: In order to keep the example simple we haven't added any structured bibliographic information, even though this can be easily done using a number of linked data vocabularies such as [...]. 
 
