@@ -163,7 +163,10 @@ Note that the entry has two different senses (both of these blank nodes)[^5]. Th
 [^5]: We can order these two senses using the ```lexicog:LexicographicComponent```class, see [the lexicog guidelines](https://www.w3.org/2019/09/lexicog/#example4). 
 
 ## Acknolwedgements
-Nexus Linguarum and MorDigital
+This work presented here was supported by a short term scientific mobility grant from the COST Action
+NexusLinguarum (CA18209) supported by COST
+(European Cooperation in Science and Technology). It was also supported by the MORDigital – Digitalização do Diccionario da Lingua
+Portugueza de António de Morais Silva [PTDC/LLT-LIN/6841/2020] project financed by the Portuguese National Funding through the FCT – Fundação para a Ciência e Tecnologia 
 
 ## References
 
