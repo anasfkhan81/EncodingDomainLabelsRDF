@@ -138,7 +138,9 @@ Both of these entries include a domain label pertaining to the domain of geograp
           skos:prefLabel "t. Geograf."@pt;
           skos:altLabel "Geograf."@pt. 
 
-The entry for _axe_ We can then encode the first entry as follows. 
+Note here the two different labels for the domain, with 't.Geograf' as the preferred label (since it is listed in the dictionary front matter).
+
+Moving onto the entry for _axe_, we can encode it as follows:
 
 
       <http://example.org/individual/MORAIS.1.DLP.AXE> a ontolex:LexicalEntry ;
@@ -174,12 +176,12 @@ Salgado, A., Costa, R. & Tasovac, T. (2019). Improving the consistency of usage 
 
 Estopà, R. B. (1998). El léxico especializado en los diccionarios de lengua general: las marcas temáticas. Revista de la Sociedad Española de Linguística, 28(2), 359–387.
 
-Almeida, B., Costa, R., Salgado, A., Ramos, M., Romary, L., Khan, F., Carvalho, S., Khemakhem, M., Silva, R., & Tasovac, T. (2022). Modelling Usage Information in a Legacy Dictionary: From TEI Lex-0 to Ontolex-Lemon. 
+Atkins, B. T. S., & Rundell, M. (2008). The Oxford Guide to Practical Lexicography. New York: Oxford University Press.
+
+Verkuyl, H. J., Janssen, M., & Jansen, F. (2003). The codification of usage by labels. In Sterkenburg, P. (Ed.), A practical guide to lexicography (pp. 297–311). Amsterdam: John Benjamins. doi:10.1075/tlrp.6.33ver.
 
 Sager, J. C. (1990). A practical course in terminology processing. Amsterdam: John Benjamins Publishing Company.
 
 ISO 1087. (2019). Terminology Work – Vocabulary – Part 1: Theory and Application. Geneva: International Organization for Standardization.
 
-Atkins, B. T. S., & Rundell, M. (2008). The Oxford Guide to Practical Lexicography. New York: Oxford University Press.
-
-Verkuyl, H. J., Janssen, M., & Jansen, F. (2003). The codification of usage by labels. In Sterkenburg, P. (Ed.), A practical guide to lexicography (pp. 297–311). Amsterdam: John Benjamins. doi:10.1075/tlrp.6.33ver.
+Almeida, B., Costa, R., Salgado, A., Ramos, M., Romary, L., Khan, F., Carvalho, S., Khemakhem, M., Silva, R., & Tasovac, T. (2022). Modelling Usage Information in a Legacy Dictionary: From TEI Lex-0 to Ontolex-Lemon. 
