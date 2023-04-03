@@ -159,11 +159,11 @@ Moving onto the entry for _axe_, we can encode it as follows:
                           lexicog:usageExample [ dcterms:source "Luſ. . 10. 87. . "]
                           ] .
 
-Note that the entry has two different senses (both of these blank nodes)[^5]. The second sense is the relevant one in our case; note also the two usage examples associated with the sense. Once again we use the ```lexinfo:domain```. 
+Note that the entry has two different senses (both of these blank nodes)[^5]. The second sense is the relevant one in our case; note also the two usage examples associated with the sense. Once again we use the ```lexinfo:domain```[^6]. 
 
 
 [^5]: We can order these two senses using the ```lexicog:LexicographicComponent```class, see [the lexicog guidelines](https://www.w3.org/2019/09/lexicog/#example4). We decided not to do this in the current case in the interests of keeping the exposition as simple as possible. 
-[^6]: In order to keep the example simple we haven't added any structured bibliographic information, even though this is 
+[^6]: In order to keep the example simple we haven't added any structured bibliographic information, even though this can be easily done using a number of linked data vocabularies such as [...]. 
 
 ## Acknolwedgements
 This work presented here was supported by a short term scientific mobility grant from the COST Action
