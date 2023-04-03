@@ -159,8 +159,8 @@ Moving onto the entry for _axe_, we can encode it as follows:
                           lexicog:usageExample [ dcterms:source "Luſ. . 10. 87. . "]
                           ] .
 
-Note that the entry has two different senses.
-
+Note that the entry has two different senses (both of these blank nodes)[^5]. The second sense is the relevant one in our case. 
+[^5]: We can order these two senses using the ```lexicog:LexicographicComponent```class, see [the lexicog guidelines](https://www.w3.org/2019/09/lexicog/#example4). 
 
 ## Acknolwedgements
 Nexus Linguarum and MorDigital
