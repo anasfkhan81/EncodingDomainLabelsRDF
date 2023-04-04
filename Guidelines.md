@@ -1,14 +1,18 @@
 # Guidelines for Encoding Domain Labels for Linked Data Lexical Resources in RDF
 ###  Fahad Khan, Ana Salgado, Rute Costa, Margarida Ramos, Bruno Almeida, Sara Carvalho and Raquel Silva
 
-- [Guidelines for Encoding Domain Labels in RDF Using in OntoLex](#guidelines-for-encoding-domain-labels-in-rdf-using-in-ontolex)
-  * [Domain Labels - An Introduction](#domain-labels---an-introduction)
-    + [Background](#background)
-    + [Examples](#examples)
-  * [Relevant Semantic Web Vocabularies](#relevant-semantic-web-vocabularies)
-  * [Ontolex-Lemon, Lexinfo and Lexicog](#ontolex-lemon--lexinfo-and-lexicog)
-    + [Cristalografia](#cristalografia)
-  * [References](#references)
+- [Domain Labels - An Introduction](#domain-labels---an-introduction)
+  * [Examples](#examples)
+  * [Requirements](#requirements)
+- [Best Practises for Domain Labels](#best-practises-for-domain-labels)
+- [Examples](#examples-1)
+  * [Namespaces](#namespaces)
+  * [Encoding hierarchical domain labels in the _Dicionário da Academia de Ciências_](#encoding-hierarchical-domain-labels-in-the--dicion-rio-da-academia-de-ci-ncias-)
+  * [Encoding hierarchical domain labels in the _Morais_ dictionary](#encoding-hierarchical-domain-labels-in-the--morais--dictionary)
+- [Acknowledgements](#acknowledgements)
+- [References](#references)
+
+
 
 ## Domain Labels - An Introduction
 
