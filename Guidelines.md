@@ -56,9 +56,9 @@ Ontolex therefore offers us a way of marking a lexical entry as belonging to a c
 
 We recommend the following steps when encoding domain label information in lexical resources:
 
-1. Domain labels themselves should be encoded as individuals of the class ```skos:Concept```. Hierarchical relationships between individual domain labels should be encoded using the ```skos:narrower``` and ```skos:broader```. In the case of retrodigitised and non-native born dictionaries, it be that the same domain label is not consistently encoded with the same string, in such situations we recommend using ```skos:preflabel``` and ```skos:altlabel``` to list the different versions of the same label (with the former being used to encode the version which is found in the front matter and the latter its variants).
-2. In case the whole entry is marked as (or interpreted by the encoder as) belonging to a domain we recommend using ```dct:subject``` with the entry as subject and the relevant domain label (encoded as ```skos:Concept```, see above) as object. See examples ... 
-3. In case a single sense is marked as (or is interpreted as) belonging to a domain we recommend using ```lexinfo:domain``` with the entry as subject and the relevant ```skos:Concept``` as object. See examples ...
+1. Domain labels themselves should be encoded as individuals of the class ```skos:Concept```. Hierarchical relationships between individual domain labels should be encoded using the ```skos:narrower``` and ```skos:broader``` properties. In the case of retrodigitised and non-native born dictionaries, it may be that the same domain label is not consistently encoded using the same string; in such situations we recommend using ```skos:preflabel``` and ```skos:altlabel``` to list the different versions of the same label (with the former being used to encode the version(s) found in the front matter and the latter its variants).
+2. In case the whole entry is marked as (or interpreted by the encoder as) belonging to a given domain we recommend encoding this information using ```dct:subject``` with the entry as subject and the relevant domain label (encoded as ```skos:Concept```, see above) as object.  
+3. In case a single sense is marked as (or is interpreted by the encoder as) belonging to a domain we recommend using ```lexinfo:domain``` with the entry as subject and the relevant ```skos:Concept``` as object.
 4. In other cases where any other part of the entry is marked with a domain label, once again we recommend the use of ```dct:subject```.
 ---
 
@@ -80,13 +80,15 @@ In the examples that follow we use the following namespaces:
 
 ### Encoding hierarchical domain labels in the _Dicionário da Academia de Ciências_
 
-In the first example we show how to encode an entry which has a sense that has been marked with a domain label and where the domain referred to is part of a hierarchy of domains. In this case the entry is for the Portuguese word _cristalografia_ 'crystallography' from the _Dicionário da Academia de Ciências_. As the following diagram shows this entry has one sense which is marked with the label MINERALOGIA referring to the domain of mineralogy. 
+In the first example we show how to encode an entry which has a sense that has been marked with a domain label and where the domain referred to is part of a hierarchy of domains. In this case the entry is for the Portuguese word _cristalografia_ 'crystallography' from the _Dicionário da Academia de Ciências_. As the following figure shows this entry has one sense which is marked with the label MINERALOGIA referring to the domain of mineralogy. 
 
 ![Cristalografia Example![cristalografia_DLP](https://user-images.githubusercontent.com/45368069/227588665-33146354-1dd5-4497-9594-f5c1567008e9.png)
 ](Examples/cristalografia_DLP.png "Cristalografia Example")
 <!--![Cristalografia Example](Examples/cristalografia_DLP.png "Cristalografia Example")-->
 
-Some additional information relevant for our example is that the domain of MINERALOGIA is a subdomain of GEOLOGIA 'geology'  in the _Dicionário da Academia de Ciências_ subject hierarchy and this is in turn a subdomain of CIENCAS DA TERRA 'earth sciences'.   We can represent these domains and their interrelations as follows using the SKOS vocabulary:
+Some additional information relevant for this example is that the domain of MINERALOGIA is a subdomain of GEOLOGIA 'geology' in the _Dicionário da Academia de Ciências_ subject hierarchy; this, in turn, is a subdomain of CIENCAS DA TERRA 'earth sciences'.   
+
+We can represent these domains and their interrelations as follows using the SKOS vocabulary:
 
       <http://example.org/class/mineralogia> rdf:type  skos:Concept; 
         skos:prefLabel "mineralogia"@pt;
@@ -122,23 +124,22 @@ In the entry itself we link the (single) sense of the entry for _cristalografia_
 
 
 ### Encoding hierarchical domain labels in the _Morais_ dictionary
-Our second example is derived from the encoding of a retrodigitised dictionary, Morais,  in which we have the use of variants for the same domain label. We will look at two entries in what follows. The first is the entry for the polysemic word _axe_ 'pimple, axle' and the second is the entry for _citerior_  'on the near side of something' 
+Our second example is derived from the encoding of a retrodigitised dictionary, Morais,  in which we have the use of variants for the same domain label. We will look at two individual entries in what follows. The first is the entry for the polysemic word _axe_ 'pimple, axle' and the second is the entry for _citerior_  'on the near side of something'. Both are shown in the figures below. 
 
 ![Axe Example](https://github.com/anasfkhan81/EncodingDomainLabelsRDF/blob/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/AXE_morais1.png)
 
 ![Citerior Example](https://github.com/anasfkhan81/EncodingDomainLabelsRDF/blob/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/CITERIOR_morais1.png)
 
-Both of these entries include a domain label pertaining to the domain of geography. In the first entry this is referred to as "t. Geograf." in the second example "Geograf." We encode this domain label as follows:
+Both of these entries include a domain label pertaining to the domain of geography. In the first entry this is referred to as "t. Geograf."; in the second example "Geograf." We encode this domain label as follows:
 
 
       <http://example.org/class/geografia> rdf:type  skos:Concept ; 
           skos:prefLabel "t. Geograf."@pt;
           skos:altLabel "Geograf."@pt. 
 
-Note here the two different labels for the domain, with 't.Geograf' as the preferred label (since it is listed in the dictionary front matter).
+Note here the two different labels for the domain, with 't.Geograf' as the preferred label (since it is listed in the dictionary's front matter).
 
 Moving onto the entry for _axe_, we can encode it as follows:
-
 
       <http://example.org/individual/MORAIS.1.DLP.AXE> a ontolex:LexicalEntry ;
           lexinfo:gender lexinfo:masculine ;
@@ -160,10 +161,10 @@ Note that the entry has two different senses (both of these blank nodes)[^5]. Th
 
 
 
-<http://example.org/instance/MORAIS.1.DLP.CITERIOR> a ontolex:LexicalEntry ;
-    ontolex:canonicalForm [ ontolex:writtenRep "CITERIOR"@pt ] ;
-    lexinfo:partOfSpeech lexinfo:adjective ; 
-    ontolex:sense [ 
+    <http://example.org/instance/MORAIS.1.DLP.CITERIOR> a ontolex:LexicalEntry ;
+        ontolex:canonicalForm [ ontolex:writtenRep "CITERIOR"@pt ] ;
+        lexinfo:partOfSpeech lexinfo:adjective ; 
+        ontolex:sense [ 
                     skos:definition "que fica áquem de algum poſto, ou ſitio"@pt ;
                     lexicog:usageExample [ 
                                 dcterms:source "  M. Luſ. ,, usa-se na t. Geograf. Hespanha citerior, e ulterior . "; 
