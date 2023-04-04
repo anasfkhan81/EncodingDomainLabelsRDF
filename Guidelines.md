@@ -209,5 +209,5 @@ Almeida, B., Costa, R., Salgado, A., Ramos, M., Romary, L., Khan, F., Carvalho, 
 
 Morais Silva, A. M. (1789). Diccionario da lingua portugueza composto pelo padre D. Rafael Bluteau, reformado, e accrescentado por Antonio de Moraes Silva, natural do Rio de Janeiro (Vol. 1–2). Officina 730 de Simão Thaddeo Ferreira. https://purl.pt/29264.
 
-Academia das Ciências de Lisboa (2021). Dicionário da Língua Portuguesa. Salgado, A. (Coord.). Lisboa: Academia das Ciências de Lisboa. [New digital edition under revision.]
+Academia das Ciências de Lisboa (2021). Dicionário da Língua Portuguesa. Salgado, A. (Coord.). Lisboa: Academia das Ciências de Lisboa. https://dicionario.acad-ciencias.pt/
 
