@@ -204,4 +204,10 @@ Sager, J. C. (1990). A practical course in terminology processing. Amsterdam: Jo
 
 ISO 1087. (2019). Terminology Work – Vocabulary – Part 1: Theory and Application. Geneva: International Organization for Standardization.
 
-Almeida, B., Costa, R., Salgado, A., Ramos, M., Romary, L., Khan, F., Carvalho, S., Khemakhem, M., Silva, R., & Tasovac, T. (2022). Modelling Usage Information in a Legacy Dictionary: From TEI Lex-0 to Ontolex-Lemon. 
+Almeida, B., Costa, R., Salgado, A., Ramos, M., Romary, L., Khan, F., Carvalho, S., Khemakhem, M., Silva, R., & Tasovac, T. (2022). Modelling Usage Information in a Legacy Dictionary: From TEI Lex-0 to Ontolex-Lemon.
+
+
+Morais Silva, A. M. (1789). Diccionario da lingua portugueza composto pelo padre D. Rafael Bluteau, reformado, e accrescentado por Antonio de Moraes Silva, natural do Rio de Janeiro (Vol. 1–2). Officina 730 de Simão Thaddeo Ferreira. https://purl.pt/29264.
+
+Academia das Ciências de Lisboa (2021). Dicionário da Língua Portuguesa. Salgado, A. (Coord.). Lisboa: Academia das Ciências de Lisboa. [New digital edition under revision.]
+
