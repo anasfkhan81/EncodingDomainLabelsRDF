@@ -174,7 +174,7 @@ Note that the entry has two different senses (both of these blank nodes)[^5]. Th
 [^5]: We can order these two senses using the ```lexicog:LexicographicComponent```class, see [the lexicog guidelines](https://www.w3.org/2019/09/lexicog/#example4). We decided not to do this in the current case in the interests of keeping the exposition as simple as possible. 
 [^6]: In order to keep the example simple we haven't added any structured bibliographic information, even though this can be easily done using a number of linked data vocabularies such as [...]. 
 
-## Acknolwedgements
+## Acknowledgements
 This work presented here was supported by a short term scientific mobility grant from the COST Action
 NexusLinguarum (CA18209) supported by COST
 (European Cooperation in Science and Technology). It was also supported by the MORDigital – Digitalização do Diccionario da Lingua
