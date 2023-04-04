@@ -170,6 +170,7 @@ Note that the entry has two different senses (both of these blank nodes)[^5]. Th
                                 dcterms:source "  M. Luſ. ,, usa-se na t. Geograf. Hespanha citerior, e ulterior . "; 
                                 dcterms:subject  <http://example.org/class/geografia>] ] .
 
+Note that in this case we associate the  
 
 [^5]: We can order these two senses using the ```lexicog:LexicographicComponent```class, see [the lexicog guidelines](https://www.w3.org/2019/09/lexicog/#example4). We decided not to do this in the current case in the interests of keeping the exposition as simple as possible. 
 [^6]: In order to keep the example simple we haven't added any structured bibliographic information, even though this can be easily done using a number of linked data vocabularies such as [...]. 
