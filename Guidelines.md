@@ -1,4 +1,4 @@
-# Guidelines for Encoding Domain Labels in for Linked Data Lexical Resources in RDF
+# Guidelines for Encoding Domain Labels for Linked Data Lexical Resources in RDF
 ###  Fahad Khan, Ana Salgado, Rute Costa, Margarida Ramos, Bruno Almeida, Sara Carvalho and Raquel Silva
 
 - [Guidelines for Encoding Domain Labels in RDF Using in OntoLex](#guidelines-for-encoding-domain-labels-in-rdf-using-in-ontolex)
