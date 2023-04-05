@@ -1,7 +1,7 @@
 # Guidelines for Encoding Domain Labels for Linked Data Lexical Resources in RDF
 ###  Fahad Khan, Ana Salgado, Rute Costa, Margarida Ramos, Bruno Almeida, Sara Carvalho and Raquel Silva
 
-- [Domain Labels - An Introduction](#domain-labels---an-introduction)
+- [Domain Labels – An Introduction](#domain-labels---an-introduction)
   * [Examples](#examples)
   * [Requirements](#requirements)
 - [Best Practises for Domain Labels](#best-practises-for-domain-labels)
