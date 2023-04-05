@@ -4,7 +4,7 @@
 - [Domain Labels – An Introduction](#domain-labels---an-introduction)
   * [Examples](#examples)
   * [Requirements](#requirements)
-- [Best Practises for Domain Labels](#best-practises-for-domain-labels)
+- [Best Practises for Encoding Domain Labels](#best-practises-for-domain-labels)
 - [Examples](#examples-1)
   * [Namespaces](#namespaces)
   * [Encoding Hierarchical Domain Labels in the _Academia_ dictionary](#encoding-hierarchical-domain-labels-in-the--dicion-rio-da-academia-de-ci-ncias-)
@@ -18,7 +18,7 @@
 
 In the context of lexicography, the term _domain label_ is commonly used to denote usage labels[^1] assigned to senses as a ‘marker which identifies the specialised field of knowledge in which a lexical unit is mainly used’ (Salgado, Costa & Tasovac, 2019)[^2]. These labels are used ‘para señalar el léxico temáticamente especializado, en contraposición al léxico común’ [to signal the thematically specialised lexicon in contrast to the common lexicon] (Estopà, 1998, p. 1) and are generally expressed in the form of abbreviations, especially in paper dictionaries, representing individual domains[^3].
 
-[^1]: Although we do will not go into detail into the broader topic of usage labels here, it is important to understand the association of such labels with a lexical unit implies that the label moves away ‘in a certain respect, from the main bulk of items described in a dictionary, and that its use is subject to some kind of restriction’ (Svensén, 2009, p. 313). The need to label certain deviations and restrictions in the use of a term (such as for instance when it is associated with a familiar register  or if it belongs to a specialised domain) originated in what is currently called _marking_ or _diasystematic marking_ (Hausmann, 1989, p. 651).  
+[^1]: Although we will not go about detail into the broader topic of usage labels here, it is important to understand the association of such labels with a lexical unit implies that the label moves away ‘in a certain respect, from the main bulk of items described in a dictionary, and that its use is subject to some kind of restriction’ (Svensén, 2009, p. 313). The need to label certain deviations and restrictions in the use of a term (such as, for instance, when it is associated with a familiar register  or if it belongs to a specialised domain) originated in what is currently called _marking_ or _diasystematic marking_ (Hausmann, 1989, p. 651).  
 [^2]: Note that the designation domain label is not universally accepted. Atkins and Rundell (2008), referring to ‘linguistic labels’, classified specialised vocabulary as ‘domains’ (p. 182); they are termed ‘field labels’ according to Verkuyl, Janssen and Jansen (2003, p. 7), ‘marcas técnicas’ by Fajardo (1996/1997), ‘marca de materia’ (Martínez de Sousa, 1995), ‘marca terminológica’ in Lara (1997), ‘marcas temáticas’ in Estopà (1998), ‘field label’ (Hartmann & James, 1998/2002), ‘marca de especialidad’ (Nomdedeu Rull, 2008), or ‘diatechnical information/marking’ (Hausmann, 1989; Svensén, 2009). We chose to use the term ‘domain label’ because we feel it is a transparent and recognisable designation for lexicographers, as well as a beacon for terminologists. 
 [^3]: We define a domain as a ‘field of special knowledge’ (ISO 1087, 2019, p. 1):  this definition has the advantage of being both transparent and sufficiently comprehensive. Taking the complexity of domain knowledge into consideration, Sager (1990) states that ‘[i]n practice, no individual or group of individuals possesses the whole structure of a community’s knowledge; conventionally, we divide knowledge up into subject areas, or disciplines, which is equivalent to defining subspaces of the knowledge space.’ (p. 16). 
 
@@ -40,7 +40,7 @@ In what follows we will take our examples from the _Dicionário da Língua Portu
 ### Requirements
 In the rest of the document we will assume a basic familiarity with the [OntoLex-Lemon vocabulary](https://www.w3.org/2016/05/ontolex/), the extension dealing with lexicographic resources the [OntoLex-Lemon Lexicography Module (Lexicog)](https://www.w3.org/2019/09/lexicog/), and the [Lexinfo vocabulary](https://lexinfo.net/) which allows for the addition of more specific linguistic information to RDF vocabularies (such as for instance part of speech information with respect to individual words). In addition, will also assume some familiarity with the [SKOS vocabulary](https://www.w3.org/TR/swbp-skos-core-spec/). 
 
-## Best Practises for Domain Labels
+## Best Practises for Encoding Domain Labels
 The [original](https://lemon-model.net/)  LExicon Model for ONtologies (_lemon_) model, the immediate predecessor of OntoLex-Lemon allowed, for the addition of topic information to entries with the ```lemon:topic property``` as well as the use of ```lemon:context``` to specify the technical register of a sense.  OntoLex-Lemon does not contain these properties; instead, the [OntoLex-Lemon guidelines](https://www.w3.org/2016/05/ontolex/) do suggest the use of the ```dct:subject``` property to specify: 
 > under which conditions (context, register, domain, etc) it is valid to regard the lexical entry as having the ontological entity as meaning.
 
