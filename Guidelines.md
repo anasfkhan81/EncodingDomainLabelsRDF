@@ -23,7 +23,7 @@ In the context of lexicography, the term _domain label_ is commonly used to deno
 [^3]: We define a domain as a ‘field of special knowledge’ (ISO 1087, 2019, p. 1):  this definition has the advantage of being both transparent and sufficiently comprehensive. Taking the complexity of domain knowledge into consideration, Sager (1990) states that ‘[i]n practice, no individual or group of individuals possesses the whole structure of a community’s knowledge; conventionally, we divide knowledge up into subject areas, or disciplines, which is equivalent to defining subspaces of the knowledge space.’ (p. 16). 
 
 <!--Therefore, we use the term domain label to indicate abbreviations (e.g., Geol.) collected in our lexicographic corpus but also to mention the extensions of each of the abbreviations written in full, e.g. GEOLOGIA [GEOLOGY]).-->
-Although domain labels are commonly associated with individual word senses then can also be assigned to individual entries (this is useful in case a term is only used in a technical sense) as well as other components of an entry. Domain labels can, moreover, be organised in taxonomies or thesauri, something that can help to make lexicons easier to navigate. Although such labels play an important role in lexical resources, and especially in lexicographic resources, there hasn’t been much work on modelling these as in linked data lexicons in a way that better exploits the possibilities of the Semantic Web stack (however, see (Almeida et. al, 2022)).  In the rest of this document we will present a series of guidelines for how to encode domain label information in RDF using three linked data vocabularies, namely OntoLex-Lemon, SKOS, and Lexicog. These will be illustrated by a series of examples taken from two Portuguese language dictionaries, one historic and the other contemporary. 
+Although domain labels are commonly associated with individual lexical unit senses they can also be assigned to individual entries (this is useful in case a term is only used in a technical sense) as well as other components of an entry. Domain labels can, moreover, be organised in taxonomies or thesauri, something that can help to make lexicons easier to navigate. Although such labels play an important role in lexical resources, and especially in lexicographic resources, there hasn’t been much work on modelling these as in linked data lexicons in a way that better exploits the possibilities of the Semantic Web stack (see Almeida et. al, 2022).  In the rest of this document we will present a series of guidelines for how to encode domain label information in RDF using three linked data vocabularies, namely OntoLex-Lemon, SKOS, and Lexicog. These will be illustrated by a series of examples taken from two Portuguese language dictionaries, one historic and the other contemporary. 
 
 
 <!--The domain labelling, a particular dictionary feature, takes our attention through this research.--> 
@@ -36,8 +36,7 @@ Although domain labels are commonly associated with individual word senses then 
 Assuming that the unmarked lexicon belongs to the general lexicon, as we shall see, is a controversial matter. In fact, not every lexical unit that can be considered a term is marked. It is unclear if this is due to forgetfulness or if the lexicographer decided to apply different criteria. In most cases, we can only limit ourselves to making assumptions, given the lack of introductory and explanatory texts in the dictionary on the methodology and criteria that have been followed. On the other hand, by comparing different lexicographic resources, we identify imbalanced criteria for selecting domains. The coexistence of generic domains with smaller spectrum domains is one of the problems.-->
 
 ### Examples
-In what follows we will take our examples from the Dicionário da Academia de Ciências. **ANA CAN YOU ADD THE REFERENCES FOR THE ACADEMY DICTIONARY AND MORAIS BELOW?**
-
+In what follows we will take our examples from the _Dicionário da Língua Portuguesa_ or DLP-ACL (ACL, 2023).
 ### Requirements
 In the rest of the document we will assume a basic familiarity with the [OntoLex-Lemon vocabulary](https://www.w3.org/2016/05/ontolex/), the extension dealing with lexicographic resources the [OntoLex-Lemon Lexicography Module (Lexicog)](https://www.w3.org/2019/09/lexicog/), and the [Lexinfo vocabulary](https://lexinfo.net/) which allows for the addition of more specific linguistic information to RDF vocabularies (such as for instance part of speech information with respect to individual words). In addition, will also assume some familiarity with the [SKOS vocabulary](https://www.w3.org/TR/swbp-skos-core-spec/). 
 
@@ -67,7 +66,7 @@ We recommend the following steps when encoding domain label information in lexic
 ---
 
 
-<!--- In the following examples we will look at how to encode several different kinds of examples of domain labels, trying to capture several different varieties of use case:
+<!--- In the following examples, we will look at how to encode several different kinds of examples of domain labels, trying to capture several different varieties of use case:
 When the meaning specified refers to a specific technical sense of a word belonging to a domain **we recommend using the ```ontolex:LexicalConcept``` class** --->
 ## Examples
 
@@ -84,13 +83,13 @@ In the examples that follow we use the following namespaces:
 
 ### Encoding hierarchical domain labels in the _Dicionário da Academia de Ciências_
 
-In the first example we show how to encode an entry which has a sense that has been marked with a domain label and where the domain referred to is part of a hierarchy of domains. In this case the entry is for the Portuguese word _cristalografia_ 'crystallography' from the _Dicionário da Academia de Ciências_. As the following figure shows this entry has one sense which is marked with the label MINERALOGIA referring to the domain of mineralogy. 
+In the first example, we show how to encode an entry which has a sense that has been marked with a domain label and where the domain referred to is part of a hierarchy of domains. In this case the entry is for the Portuguese lexical unit _cristalografia_ 'crystallography' from the DLP-ACL. As the following figure shows, this entry has one sense which is marked with the label MINERALOGIA referring to the domain of mineralogy. 
 
 ![Cristalografia Example![cristalografia_DLP](https://user-images.githubusercontent.com/45368069/227588665-33146354-1dd5-4497-9594-f5c1567008e9.png)
 ](Examples/cristalografia_DLP.png "Cristalografia Example")
 <!--![Cristalografia Example](Examples/cristalografia_DLP.png "Cristalografia Example")-->
 
-Some additional information relevant for this example is that the domain of MINERALOGIA is a subdomain of GEOLOGIA 'geology' in the _Dicionário da Academia de Ciências_ subject hierarchy; this, in turn, is a subdomain of CIENCAS DA TERRA 'earth sciences'.   
+Some additional information relevant for this example is that the domain of MINERALOGIA is a subdomain of GEOLOGIA 'geology' in the DLP-ACL subject hierarchy that has CIÊNCIAS DA TERRA 'earth sciences' has a superdomain.   
 
 We can represent these domains and their interrelations as follows using the SKOS vocabulary:
 
@@ -109,7 +108,7 @@ We can represent these domains and their interrelations as follows using the SKO
           skos:broader <http://example.org/class/mineralogia> .
 
 
-In the entry itself we link the (single) sense of the entry for _cristalografia_ (note that the sense is a blank node in the current example) to the domain ```<http://example.org/class/mineralogia>``` via the ```lexinfo:domain``` property.
+In the entry itself, we link the (single) sense of the entry for _cristalografia_ (note that the sense is a blank node in the current example) to the domain ```<http://example.org/class/mineralogia>``` via the ```lexinfo:domain``` property.
 
       <http://example.org/class/DLP_cristalografia> a ontolex:LexicalEntry ;
        lexinfo:etymology [ rdf:value "Do grego κρύσταλλος cristal + sufixo -grafia"@pt ] ;
@@ -209,5 +208,5 @@ Almeida, B., Costa, R., Salgado, A., Ramos, M., Romary, L., Khan, F., Carvalho, 
 
 Morais Silva, A. M. (1789). Diccionario da lingua portugueza composto pelo padre D. Rafael Bluteau, reformado, e accrescentado por Antonio de Moraes Silva, natural do Rio de Janeiro (Vol. 1–2). Officina 730 de Simão Thaddeo Ferreira. https://purl.pt/29264.
 
-Academia das Ciências de Lisboa (2021). Dicionário da Língua Portuguesa. Salgado, A. (Coord.). Lisboa: Academia das Ciências de Lisboa. https://dicionario.acad-ciencias.pt/
+ACL (2023). Dicionário da Língua Portuguesa. Salgado, A. (Coord.). Lisboa: Academia das Ciências de Lisboa. https://dicionario.acad-ciencias.pt/
 
