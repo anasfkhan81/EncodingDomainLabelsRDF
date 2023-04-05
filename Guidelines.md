@@ -7,8 +7,8 @@
 - [Best Practises for Domain Labels](#best-practises-for-domain-labels)
 - [Examples](#examples-1)
   * [Namespaces](#namespaces)
-  * [Encoding hierarchical domain labels in the _Academia_ dictionary](#encoding-hierarchical-domain-labels-in-the--dicion-rio-da-academia-de-ci-ncias-)
-  * [Encoding hierarchical domain labels in the _Morais_ dictionary](#encoding-hierarchical-domain-labels-in-the--morais--dictionary)
+  * [Encoding Hierarchical Domain Labels in the _Academia_ dictionary](#encoding-hierarchical-domain-labels-in-the--dicion-rio-da-academia-de-ci-ncias-)
+  * [Encoding Hierarchical Domain Labels in the _Morais_ dictionary](#encoding-hierarchical-domain-labels-in-the--morais--dictionary)
 - [Acknowledgements](#acknowledgements)
 - [References](#references)
 
