@@ -7,14 +7,14 @@
 - [Best Practises for Domain Labels](#best-practises-for-domain-labels)
 - [Examples](#examples-1)
   * [Namespaces](#namespaces)
-  * [Encoding hierarchical domain labels in the _Dicionário da Academia de Ciências_](#encoding-hierarchical-domain-labels-in-the--dicion-rio-da-academia-de-ci-ncias-)
+  * [Encoding hierarchical domain labels in the _Academia_ dictionary](#encoding-hierarchical-domain-labels-in-the--dicion-rio-da-academia-de-ci-ncias-)
   * [Encoding hierarchical domain labels in the _Morais_ dictionary](#encoding-hierarchical-domain-labels-in-the--morais--dictionary)
 - [Acknowledgements](#acknowledgements)
 - [References](#references)
 
 
 
-## Domain Labels - An Introduction
+## Domain Labels – An Introduction
 
 In the context of lexicography, the term _domain label_ is commonly used to denote usage labels[^1] assigned to senses as a ‘marker which identifies the specialised field of knowledge in which a lexical unit is mainly used’ (Salgado, Costa & Tasovac, 2019)[^2]. These labels are used ‘para señalar el léxico temáticamente especializado, en contraposición al léxico común’ [to signal the thematically specialised lexicon in contrast to the common lexicon] (Estopà, 1998, p. 1) and are generally expressed in the form of abbreviations, especially in paper dictionaries, representing individual domains[^3].
 
