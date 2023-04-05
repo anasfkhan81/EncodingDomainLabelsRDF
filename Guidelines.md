@@ -68,7 +68,7 @@ When the meaning specified refers to a specific technical sense of a word belong
 ## Examples
 
 ### Namespaces
-In the examples that follow we use the following namespaces:
+In the examples that follow, we use the following namespaces:
 
       @prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
       @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
@@ -78,15 +78,15 @@ In the examples that follow we use the following namespaces:
       @prefix lexicog: <http://www.w3.org/ns/lemon/lexicog#> .
       
 
-### Encoding hierarchical domain labels in the _Dicionário da Academia de Ciências_
+### Encoding hierarchical domain labels in the _Academia_ dictionary
 
-In the first example, we show how to encode an entry which has a sense that has been marked with a domain label and where the domain referred to is part of a hierarchy of domains. In this case the entry is for the Portuguese lexical unit _cristalografia_ 'crystallography' from the DLP-ACL. As the following figure shows, this entry has one sense which is marked with the label MINERALOGIA referring to the domain of mineralogy. 
+In the first example, we show how to encode an entry which has a unique sense that has been marked with a domain label and where the domain referred to is part of a hierarchy of domains. In this case, the entry is for the Portuguese lexical unit _cristalografia_ 'crystallography' from the _Academia_ dictionary. As the following figure shows, this entry has one sense which is marked with the label MINERALOGIA referring to the domain of mineralogy. 
 
 ![Cristalografia Example![cristalografia_DLP](https://user-images.githubusercontent.com/45368069/227588665-33146354-1dd5-4497-9594-f5c1567008e9.png)
 ](Examples/cristalografia_DLP.png "Cristalografia Example")
 <!--![Cristalografia Example](Examples/cristalografia_DLP.png "Cristalografia Example")-->
 
-Some additional information relevant for this example is that the domain of MINERALOGIA is a subdomain of GEOLOGIA 'geology' in the DLP-ACL subject hierarchy that has CIÊNCIAS DA TERRA 'earth sciences' has a superdomain.   
+Some additional information relevant to this example is that the domain of MINERALOGIA is a subdomain of the GEOLOGIA 'geology' domain in the _Academia_ dictionary subject hierarchy that belongs to CIÊNCIAS DA TERRA 'earth sciences' superdomain.   
 
 We can represent these domains and their interrelations as follows using the SKOS vocabulary:
 
