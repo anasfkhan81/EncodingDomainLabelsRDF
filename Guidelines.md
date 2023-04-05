@@ -124,20 +124,20 @@ In the entry itself, we link the (single) sense of the entry for _cristalografia
 
 
 ### Encoding hierarchical domain labels in the _Morais_ dictionary
-Our second example is derived from the encoding of a retrodigitised dictionary, Morais,  in which we have the use of variants for the same domain label. We will look at two individual entries in what follows. The first is the entry for the polysemic word _axe_ 'pimple, axle' and the second is the entry for _citerior_  'on the near side of something'. Both are shown in the figures below. 
+Our second example is from the encoding of a retrodigitised dictionary, Morais, in which we detected the use of variants for the same domain label (different abbreviations, italics, bold, formulae in the definitions that point to a domain, etc.). We will look at two individual entries in what follows. The first is the entry for the polysemic word _axe_ 'pimple, axle' and the second is the entry for _citerior_  'on the near side of something'. Both are shown in the figures below. 
 
 ![Axe Example](https://github.com/anasfkhan81/EncodingDomainLabelsRDF/blob/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/AXE_morais1.png)
 
 ![Citerior Example](https://github.com/anasfkhan81/EncodingDomainLabelsRDF/blob/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/CITERIOR_morais1.png)
 
-Both of these entries include a domain label pertaining to the domain of geography. In the first entry this is referred to as "t. Geograf."; in the second example "Geograf." We encode this domain label as follows:
+Both of these entries include a domain label pertaining to the domain of GEOGRAPHY. In the first entry, this is referred to as "t. Geograf."; in the second example "_Geograf._". We encode this marker as follows:
 
 
       <http://example.org/class/geografia> rdf:type  skos:Concept ; 
           skos:prefLabel "t. Geograf."@pt;
           skos:altLabel "Geograf."@pt. 
 
-Note here the two different labels for the domain, with 't.Geograf' as the preferred label (since it is listed in the dictionary's front matter).
+Note here the two different labels for the domain, with '_t.Geograf_' as the preferred label (since it is listed in the dictionary's front matter).
 
 Moving onto the entry for _axe_, we can encode it as follows:
 
