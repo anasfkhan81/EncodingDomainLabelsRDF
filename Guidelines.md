@@ -56,9 +56,9 @@ Ontolex therefore offers us a way of marking a lexical entry as belonging to a c
 
 We recommend the following steps when encoding domain label information in lexical resources:
 
-1. Domain labels themselves should be encoded as individuals of the class ```skos:Concept```. Hierarchical relationships between individual domain labels should be encoded using the ```skos:narrower``` and ```skos:broader``` properties. In the case of retrodigitised and non-native born dictionaries, it may be that the same domain label is not consistently encoded using the same string; in such situations we recommend using ```skos:preflabel``` and ```skos:altlabel``` to list the different versions of the same label (with the former being used to encode the version(s) found in the front matter and the latter its variants).
+1. Domain labels should be encoded as individuals of the class ```skos:Concept```. Hierarchical relationships between individual domain labels should be encoded using the ```skos:narrower``` and ```skos:broader``` properties. In the case of retrodigitised and non-native-born dictionaries, it may be that the same domain label is not consistently encoded using the same string; in such situations, we recommend using ```skos:preflabel``` and ```skos:altlabel``` to list the different versions of the same label (with the former being used to encode the version(s) found in the front matter and the latter its variants).
 2. In case the whole entry is marked as (or interpreted by the encoder as) belonging to a given domain we recommend encoding this information using ```dcterms:subject``` with the entry as subject and the relevant domain label (encoded as ```skos:Concept```, see above) as object.  
-3. In case a single sense is marked as (or is interpreted by the encoder as) belonging to a domain we recommend using ```lexinfo:domain``` with the entry as subject and the relevant ```skos:Concept``` as object.
+3. In case a single sense is marked as (or is interpreted by the encoder as) belonging to a domain, we recommend using ```lexinfo:domain``` with the entry as subject and the relevant ```skos:Concept``` as object.
 4. In other cases where any other part of the entry is marked with a domain label, once again we recommend the use of ```dcterms:subject```.
 ---
 
