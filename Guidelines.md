@@ -2,7 +2,6 @@
 ###  Fahad Khan, Ana Salgado, Rute Costa, Margarida Ramos, Bruno Almeida, Sara Carvalho and Raquel Silva
 
 - [Domain Labels – An Introduction](#domain-labels---an-introduction)
-  * [Examples](#examples)
   * [Requirements](#requirements)
 - [Best Practises for Encoding Domain Labels](#best-practises-for-domain-labels)
 - [Examples](#examples-1)
@@ -39,23 +38,22 @@ Assuming that the unmarked lexicon belongs to the general lexicon, as we shall s
 In the rest of the document, we will assume a basic familiarity with the [OntoLex-Lemon vocabulary](https://www.w3.org/2016/05/ontolex/), the [Lexinfo vocabulary](https://lexinfo.net/) as well as the [SKOS vocabulary](https://www.w3.org/TR/swbp-skos-core-spec/). 
 
 ## Best Practises for Encoding Domain Labels
-The [original](https://lemon-model.net/)  LExicon Model for ONtologies (_lemon_) model, the immediate predecessor of OntoLex-Lemon allowed, for the addition of topic information to entries with the ```lemon:topic property``` as well as the use of ```lemon:context``` to specify the technical register of a sense.  OntoLex-Lemon does not contain these properties; instead, the [OntoLex-Lemon guidelines](https://www.w3.org/2016/05/ontolex/) do suggest the use of the ```dct:subject``` property to specify: 
+The original predecessor of OntoLex-Lemon, namely, [the LExicon Model for ONtologies (_lemon_)](https://lemon-model.net/), allowed for the addition of topic information to entries via the use of the ```lemon:topic``` property, along with ```lemon:context``` to specifying the technical register of a given sense.  While OntoLex-Lemon did not retain these properties, the [OntoLex-Lemon guidelines](https://www.w3.org/2016/05/ontolex/) instead suggest the use of the ```dct:subject``` property to specify: 
 > under which conditions (context, register, domain, etc) it is valid to regard the lexical entry as having the ontological entity as meaning.
 
-The same guidelines also recommend the use of the ```ontolex:usage``` property which is defined as indicating: 
+The same guidelines also recommend the use of the ```ontolex:usage``` property which is defined as specifying the
 > usage conditions or pragmatic implications when using the lexical entry to refer to the given ontological meaning 
 
-This property has the domain of ```ontolex:LexicalSense``` and the range ```rdfs:Resource```. Moreover, in the lexinfo vocabulary[^4], we have subproperties of ```ontolex:usage```, including ```lexinfo:domain``` which is defined as a: 
+This property has the domain of ```ontolex:LexicalSense``` and the range ```rdfs:Resource```. Moreover, the lexinfo vocabulary[^4], defines a series of subproperties of ```ontolex:usage``` including ```lexinfo:domain``` which is defined as a: 
 >usage marker which identifies the specialized field of knowledge in which a lexical unit is mainly used.
 
 [^4]: Here and throughout this document when we mention lexinfo we are referring to [lexinfo 3.0](https://lexinfo.net/ontology/3.0/lexinfo).
 
-Ontolex therefore offers us a way of marking a lexical entry as belonging to a certain domain and a way of specifying that a specific sense of an entry is associated with a particular domain.  When it comes to encoding the domain label itself, we suggest encoding it as a instance of the SKOS class ```Concept``` and using the ```skos:narrower``` and ```skos:broader``` relations to encode the relations between different domains. 
+Ontolex therefore offers us a way of marking a lexical entry as belonging to a certain domain and a way of specifying that a specific sense of an entry is associated with a particular domain.  When it comes to encoding the domain label itself, we suggest encoding it as a instance of the SKOS class ```Concept``` and using the ```skos:narrower``` and ```skos:broader``` relations to encode the relations between different domains.  We therefore suggest the following steps when encoding domain label information in linked data lexical resources.
 
 ---
-**SUMMARY OF RECOMMENDATIONS** 
 
-We recommend the following steps when encoding domain label information in lexical resources:
+
 
 1. Domain labels should be encoded as individuals of the class ```skos:Concept```. Hierarchical relationships between individual domain labels should be encoded using the ```skos:narrower``` and ```skos:broader``` properties. In the case of retrodigitised and non-native-born dictionaries, it may be that the same domain label is not consistently encoded using the same string; in such situations, we recommend using ```skos:preflabel``` and ```skos:altlabel``` to list the different versions of the same label (with the former being used to encode the version(s) found in the front matter and the latter its variants).
 2. In case the whole entry is marked as (or interpreted by the encoder as) belonging to a given domain we recommend encoding this information using ```dcterms:subject``` with the entry as subject and the relevant domain label (encoded as ```skos:Concept```, see above) as object.  
@@ -81,7 +79,7 @@ In the examples that follow, we use the following namespaces:
 
 ### Encoding hierarchical domain labels in the _Academia_ dictionary
 
-In the first example, we show how to encode an entry which has a unique sense that has been marked with a domain label and where the domain referred to is part of a hierarchy of domains. In this case, the entry is for the Portuguese lexical unit _cristalografia_ 'crystallography' from the _Academia_ dictionary. As the following figure shows, this entry has one sense which is marked with the label MINERALOGIA referring to the domain of mineralogy. 
+In the first example, we show how to encode an entry which has a unique sense that has been marked with a domain label and where the domain referred to is part of a hierarchy of domains. The entry in question is for the Portuguese lexical unit _cristalografia_ 'crystallography' and comes from the _Academia_ dictionary. As the following figure shows, this entry has one sense which is marked with the label MINERALOGIA referring to the domain of mineralogy. 
 
 ![Cristalografia Example![cristalografia_DLP](https://user-images.githubusercontent.com/45368069/227588665-33146354-1dd5-4497-9594-f5c1567008e9.png)
 ](Examples/cristalografia_DLP.png "Cristalografia Example")
@@ -125,7 +123,7 @@ In the entry itself, we link the (single) sense of the entry for _cristalografia
 
 
 ### Encoding hierarchical domain labels in the _Morais_ dictionary
-Our second example is from the encoding of a retrodigitised dictionary, Morais, in which we detected the use of variants for the same domain label (different abbreviations, italics, bold, formulae in the definitions that point to a domain, etc.). We will look at two individual entries in what follows. The first is the entry for the polysemic word _axe_ 'pimple, axle' and the second is the entry for _citerior_  'on the near side of something'. Both are shown in the figures below. 
+Our second example is from the encoding of a retrodigitised dictionary, the _Diccionario da Lingua Portugueza de António de Morais Silva_. In this example we will see the use of variants for the same domain label (different abbreviations, italics, bold, formulae in the definitions that point to a domain, etc.). We will look at two individual entries in what follows. The first is the entry for the polysemic word _axe_ 'pimple, axle' and the second is the entry for _citerior_  'on the near side of something'. Both are shown in the figures below. 
 
 ![Axe Example](https://github.com/anasfkhan81/EncodingDomainLabelsRDF/blob/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/AXE_morais1.png)
 
@@ -158,8 +156,7 @@ Moving onto the entry for _axe_, we can encode it as follows:
                           lexicog:usageExample [ dcterms:source "Luſ. . 10. 87. . "]
                           ] .
 
-Note that the entry has two different senses (both of these blank nodes)[^5]. The second sense is the relevant one in our case; note also the two usage examples associated with the sense. Once again we use the ```lexinfo:domain```[^6]. 
-
+Note that the entry has two different senses (both of these represented as blank nodes)[^5]. The second sense is the relevant one in our case; note also the two usage examples associated with the sense. Once again we use the ```lexinfo:domain```[^6]. 
 
 
     <http://example.org/instance/MORAIS.1.DLP.CITERIOR> a ontolex:LexicalEntry ;
@@ -180,7 +177,7 @@ Note that in this case we associate the domain label with the usage example rath
 This work presented here was supported by a short term scientific mobility grant from the COST Action
 NexusLinguarum (CA18209) supported by COST
 (European Cooperation in Science and Technology). It was also supported by the MORDigital – Digitalização do Diccionario da Lingua
-Portugueza de António de Morais Silva [PTDC/LLT-LIN/6841/2020] project financed by the Portuguese National Funding through the FCT – Fundação para a Ciência e Tecnologia 
+Portugueza de António de Morais Silva [PTDC/LLT-LIN/6841/2020] project financed by Portuguese National Funding through the FCT – Fundação para a Ciência e Tecnologia.
 
 ## References
 
