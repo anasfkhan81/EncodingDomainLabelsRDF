@@ -1,5 +1,5 @@
 # Guidelines for Encoding Domain Labels for Linked Data Lexical Resources in RDF
-###  Fahad Khan, Ana Salgado, Rute Costa, Margarida Ramos, Bruno Almeida, Sara Carvalho and Raquel Silva
+###  Fahad Khan, Ana Salgado, Rute Costa, Margarida Ramos, Sara Carvalho, Raquel Silva and Bruno Almeida
 
 - [Domain Labels – An Introduction](#domain-labels---an-introduction)
   * [Requirements](#requirements)
@@ -59,6 +59,7 @@ Ontolex therefore offers us a way of marking a lexical entry as belonging to a c
 2. In case the whole entry is marked as (or interpreted by the encoder as) belonging to a given domain we recommend encoding this information using ```dcterms:subject``` with the entry as subject and the relevant domain label (encoded as ```skos:Concept```, see above) as object.  
 3. In case a single sense is marked as (or is interpreted by the encoder as) belonging to a domain, we recommend using ```lexinfo:domain``` with the entry as subject and the relevant ```skos:Concept``` as object.
 4. In other cases where any other part of the entry is marked with a domain label, once again we recommend the use of ```dcterms:subject```.
+
 ---
 
 
@@ -115,19 +116,23 @@ In the entry itself, we link the (single) sense of the entry for _cristalografia
                             ontolex:writtenRep "cristalografia"@pt 
                             ] ;
          ontolex:sense [ lexinfo:domain <http://example.org/class/mineralogia>;
-                           skos:definition """ciência que estuda os cristais, considerando aspetos tais como o seu crescimento, a
-                           estrutura interna e as propriedades físicas decorrentes da regularidade dessa estrutura,
-                           em particular, as formas que apresentam, cuja simetria utiliza como método de
-                           classificação e de descrição"""@pt ] .
+                           skos:definition 
+				"""ciência que estuda os cristais, 
+				considerando aspetos tais como o seu crescimento,
+				a estrutura interna e 
+				as propriedades físicas decorrentes da regularidade dessa estrutura,
+                           	em particular, as formas que apresentam, 
+				cuja simetria utiliza como método de
+                           	classificação e de descrição"""@pt ] .
 
 
 
 ### Encoding hierarchical domain labels in the _Morais_ dictionary
 Our second example is from the encoding of a retrodigitised dictionary, the _Diccionario da Lingua Portugueza de António de Morais Silva_. In this example we will see the use of variants for the same domain label (different abbreviations, italics, bold, formulae in the definitions that point to a domain, etc.). We will look at two individual entries in what follows. The first is the entry for the polysemic word _axe_ 'pimple, axle' and the second is the entry for _citerior_  'on the near side of something'. Both are shown in the figures below. 
 
-![Axe Example](https://github.com/anasfkhan81/EncodingDomainLabelsRDF/blob/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/AXE_morais1.png)
+![Axe Example](https://raw.githubusercontent.com/anasfkhan81/EncodingDomainLabelsRDF/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/AXE_morais1.png)
 
-![Citerior Example](https://github.com/anasfkhan81/EncodingDomainLabelsRDF/blob/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/CITERIOR_morais1.png)
+![Citerior Example](https://raw.githubusercontent.com/anasfkhan81/EncodingDomainLabelsRDF/13d34e20ef3b7f85947240c254d563f03f74d99d/Examples/CITERIOR_morais1.png)
 
 Both of these entries include a domain label pertaining to the domain of GEOGRAPHY. In the first entry, this is referred to as "t. Geograf."; in the second example "_Geograf._". We encode this marker as follows:
 
@@ -151,9 +156,11 @@ Moving onto the entry for _axe_, we can encode it as follows:
                          [ 
                           lexinfo:domain <http://example.org/class/geografia> ;
                           skos:definition "eixo"@pt ;
-                          lexicog:usageExample [ dcterms:source "C. Eleg. O Poeta Simonides . ";
-                              rdf:value "Dando do segundo axe certa prova"@pt ]; 
-                          lexicog:usageExample [ dcterms:source "Luſ. . 10. 87. . "]
+                          lexicog:usageExample [ 
+				dcterms:source "C. Eleg. O Poeta Simonides . ";
+                              	rdf:value "Dando do segundo axe certa prova"@pt ]; 
+                          lexicog:usageExample [ 
+				dcterms:source "Luſ. . 10. 87. . "]
                           ] .
 
 Note that the entry has two different senses (both of these represented as blank nodes)[^5]. The second sense is the relevant one in our case; note also the two usage examples associated with the sense. Once again we use the ```lexinfo:domain```[^6]. 
@@ -165,7 +172,8 @@ Note that the entry has two different senses (both of these represented as blank
         ontolex:sense [ 
                     skos:definition "que fica áquem de algum poſto, ou ſitio"@pt ;
                     lexicog:usageExample [ 
-                                dcterms:source "  M. Luſ. ,, usa-se na t. Geograf. Hespanha citerior, e ulterior . "; 
+                                dcterms:source 
+				" M. Luſ. ,, usa-se na t. Geograf. Hespanha citerior, e ulterior . "; 
                                 dcterms:subject  <http://example.org/class/geografia>] ] .
 
 Note that in this case we associate the domain label with the usage example rather than the entry or even the sense, making use, in this case of ```dcterms:subject```.  
